@@ -95,7 +95,7 @@ $("ul").on("click", "span", function (e) {
 //keypress event listener on input
 $("input[type='text']").on("keypress", function (e) {});
 
-$("#down").click(function () {
+$("#down").on("click", function () {
     $("input[type='text'").fadeToggle(300);
 });
 
