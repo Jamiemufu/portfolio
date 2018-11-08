@@ -14,7 +14,7 @@
                     <button type="submit" for="list" class="buttons-right">
                         <i id="plus" class="fa fa-plus"></i>
                     </button>
-                    <button id="down" type="button" class="buttons-right">
+                    <button id="down" class="buttons-right">
                         <i class="fa fa-arrow-circle-down"></i>
                     </button>
                 </div>
