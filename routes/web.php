@@ -11,7 +11,7 @@
 |
 */
 Route::get('/', function () {
-    
+    return redirect('todo');
 });
 
 Route::resource('todo', 'itemsController');
