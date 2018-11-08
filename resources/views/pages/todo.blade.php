@@ -6,17 +6,20 @@
        
     <form method="post" action="{{ url('todo') }}">
         @csrf
-        <h1>To-do list
-            <div class="float-right">
-                <button id="down" type="button">
-                    <i class="fa fa-arrow-down"></i>
-                </button>
-                
-                <button type="submit" for="list">
-                    <i id="plus" class="fa fa-plus"></i>
-                </button>
-            </div>
-        </h1>
+
+        <div class="todo">
+            <h1>To-do list</h1>
+            <button id="down" type="button" class="buttons-right">
+                <i class="fa fa-arrow-down"></i>
+            </button>
+            
+            <button type="submit" for="list" class="buttons-right">
+                <i id="plus" class="fa fa-plus"></i>
+            </button>
+        </div>
+       
+       
+        
 
         <input type="text" name="item" placeholder="Add New Todo" autocomplete="off" required>
 

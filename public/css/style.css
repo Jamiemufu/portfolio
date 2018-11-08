@@ -28,11 +28,16 @@
   color: grey;
 }
 
-form h1 {
+form .todo {
+  background-color: #2980b9;
+}
+
+form .todo h1 {
+  display: inline-block;
+  width: 80%;
   margin: 0 auto;
   padding-left: 15px;
   text-align: left;
-  background-color: #2980b9;
   color: white;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -40,8 +45,8 @@ form h1 {
   font-weight: normal;
 }
 
-form h1 button {
-  display: inline-block;
+form .todo .buttons-right {
+  display: inline;
   text-align: right;
   background: none;
   border: none;

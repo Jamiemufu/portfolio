@@ -86,7 +86,7 @@ $("ul").on("click", "li", function (e) {
 $("ul").on("click", "span", function (e) {
     //needed to stop click bubbling
     //use parent() for parent element
-    $(this).parent().fadeOut(1000, function (e) {
+    $(this).parent().fadeOut(600, function (e) {
         $(this).remove();
     });
     e.stopPropagation();
@@ -96,7 +96,7 @@ $("ul").on("click", "span", function (e) {
 $("input[type='text']").on("keypress", function (e) {});
 
 $("#down").on("click tap", function () {
-    $("input[type='text'").fadeOut(1000);
+    $("input[type='text'").fadeToggle(300);
 });
 
 /***/ })
