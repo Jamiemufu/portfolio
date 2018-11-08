@@ -46,6 +46,7 @@ form .todo h1 {
 }
 
 form .todo .buttons-right {
+  width: 5%;
   display: inline;
   text-align: right;
   background: none;
