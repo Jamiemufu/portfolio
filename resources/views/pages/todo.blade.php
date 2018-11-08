@@ -4,11 +4,14 @@
 
 <div id="container" class="container no-padding">
        
-    <form method="post" action="{{ url('todo') }}" >
+    <form method="post" action="{{ url('todo') }}" name="list" >
         @csrf
         <h1>To-do list
-            <i id="down" class="fa fa-arrow-down"></i>
-            <button type="submit">
+            <button id="down" type="button">
+                <i class="fa fa-arrow-down"></i>
+            </button>
+            
+            <button type="submit" for="list">
                 <i id="plus" class="fa fa-plus"></i>
             </button>
         </h1>
