@@ -92,13 +92,13 @@ $("ul").on("click", "span", function (e) {
     e.stopPropagation();
 });
 
-//keypress event listener on input
-$("input[type='text']").on("keypress", function (e) {});
-
-$("#down").click(function (e) {
+$("#down").on("touch click", function (e) {
     e.preventDefault();
     $("input[type='text'").fadeToggle(300);
 });
+
+//keypress event listener on input
+$("input[type='text']").on("keypress", function (e) {});
 
 /***/ })
 
