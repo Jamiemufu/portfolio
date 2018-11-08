@@ -7,13 +7,15 @@
     <form method="post" action="{{ url('todo') }}" name="list" >
         @csrf
         <h1>To-do list
-            <button id="down" type="button">
-                <i class="fa fa-arrow-down"></i>
-            </button>
-            
-            <button type="submit" for="list">
-                <i id="plus" class="fa fa-plus"></i>
-            </button>
+            <div class="float-right">
+                <button id="down" type="button">
+                    <i class="fa fa-arrow-down"></i>
+                </button>
+                
+                <button type="submit" for="list">
+                    <i id="plus" class="fa fa-plus"></i>
+                </button>
+            </div>
         </h1>
 
         <input type="text" name="item" placeholder="Add New Todo" autocomplete="off" required>
