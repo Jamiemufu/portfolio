@@ -46,7 +46,6 @@ form h1 button {
   background: none;
   border: none;
   color: white;
-  float: right;
 }
 
 form input {
@@ -68,14 +67,6 @@ form input {
   background-color: #fff;
   border: 3px solid #2980b9;
   outline: none;
-}
-
-.fa-arrow-down {
-  float: right;
-}
-
-.fa-plus {
-  float: right;
 }
 
 ul {
