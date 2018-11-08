@@ -7,7 +7,7 @@
     <form method="post" action="{{ url('todo') }}" >
         @csrf
         <h1>To-do list
-            <i id="plus" class="fa fa-arrow-down"></i>
+            <i id="down" class="fa fa-arrow-down"></i>
             <button type="submit">
                 <i id="plus" class="fa fa-plus"></i>
             </button>

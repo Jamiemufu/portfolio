@@ -1,24 +1,24 @@
 //basic functionality
 
 //add click to strikethrough on list
-$("ul").on("click", "li", function () {
+$("ul").on("click", "li", function (e) {
     $(this).toggleClass("completed");
 });
 
-$("#plus").on("click", "input", function(e){
+$("ul").on("click", "span", function(e){
     //needed to stop click bubbling
     //use parent() for parent element
-    $("input").name('item').fadeOut(600, function(){
-        $("input").name('item').remove();
+    $(this).parent().fadeOut(600, function(e){
+        $(this).remove();
     });
     e.stopPropagation();
 });
 
 //keypress event listener on input
-$("input[type='text']").on("keypress", function () {
+$("input[type='text']").on("keypress", function (e) {
     
 });
 
-$("#plus").click(function() {
+$("#down").click(function() {
     $("input[type='text'").fadeToggle(300);
 })
