@@ -5,11 +5,11 @@ $("ul").on("click", "li", function () {
     $(this).toggleClass("completed");
 });
 
-$("ul").on("click", "span", function(e){
+$("#plus").on("click", "input", function(e){
     //needed to stop click bubbling
     //use parent() for parent element
-    $("Input").name('item').fadeOut(600, function(){
-        $("Input").name('item').remove();
+    $("input").name('item').fadeOut(600, function(){
+        $("input").name('item').remove();
     });
     e.stopPropagation();
 });
