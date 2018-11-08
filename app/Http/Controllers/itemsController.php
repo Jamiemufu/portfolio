@@ -14,7 +14,7 @@ class itemsController extends Controller
     public function index(Request $request)
     {   
         $item=\App\items::all();
-        return view('main',compact('item'));
+        return view('pages.todo',compact('item'));
     }
 
     /**

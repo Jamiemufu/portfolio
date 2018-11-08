@@ -11,7 +11,7 @@
 |
 */
 Route::get('/', function () {
-    return redirect('todo');
+    return view('pages.home');
 });
 
 Route::resource('todo', 'itemsController');
