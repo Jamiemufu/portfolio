@@ -19,6 +19,6 @@ $("input[type='text']").on("keypress", function (e) {
     
 });
 
-$("#down").on("click", function() {
+$("#down").on("click touchstart tap", function() {
     $("input[type='text'").fadeToggle(300);
 })
