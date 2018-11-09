@@ -11,10 +11,10 @@
                 <div class="todo">
                     <h1>To-do list</h1>
                     <div class="todo--buttons">
-                        <button type="submit" for="list" class="buttons-right">
+                        <button type="submit">
                             <i id="plus" class="fa fa-plus"></i>
                         </button>
-                        <button id="down" class="buttons-right">
+                        <button id="down">
                             <i class="fa fa-arrow-circle-down"></i>
                         </button>
                     </div>
