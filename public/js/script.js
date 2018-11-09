@@ -95,7 +95,7 @@ $("ul").on("click", "span", function (e) {
 $("#down").on("touch click", function (e) {
     e.preventDefault();
     alert('CLICKED THE FUCKING BUTTON');
-    $("input[type='text'").fadeToggle(300);
+    $("input[type='text']").fadeToggle(300);
 });
 
 //keypress event listener on input
