@@ -52,6 +52,7 @@ form .todo .buttons-right {
   background: none;
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 form input {
