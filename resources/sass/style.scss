@@ -114,7 +114,7 @@ span {
     i {
         color: white;
     }
-    
+
     height: 40px;
     line-height: 40px;
     text-align: center;
@@ -141,6 +141,8 @@ span {
     }
 }
 
+
+//Classes to be toggled via JQuery
 .delete {
     background: #e74c4c;
     margin-right: 20px;
@@ -155,6 +157,7 @@ span {
     i {
         color: orange;
     }
+
     float: right;
     background: white;
 }

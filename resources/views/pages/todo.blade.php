@@ -3,7 +3,7 @@
 @section('content')
 
 <div id="container" class="container no-padding">
-       
+
     <form method="post" action="{{ url('todo') }}">
         @csrf
         <div class="row">
@@ -37,10 +37,10 @@
                             <button type="submit" value="DELETE"><i class="fa fa-trash"></i></button>
                         </span>
                         <!--Display list-->
-                            {{$items['list']}}
-                    
-                        <span class="edit" id="edit">
-                            <button type="button"><i id="icon" class="fa fa-check"></i></button>
+                        {{$items['list']}}
+
+                        <span class="edit edit-span" id="edit">
+                            <button type="button"><i id="icon" class="fa fa-check icon-check"></i></button>
                         </span>
                     </form>
                 </li>

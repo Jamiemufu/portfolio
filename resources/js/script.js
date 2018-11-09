@@ -1,10 +1,10 @@
 //basic functionality
 
 //add click to strikethrough on list
-$("#edit").on("click", function (e) {
-    $("li").toggleClass("completed");
-    $("#icon").toggleClass(".fa fa-times");
-    $("#edit").toggleClass("un-do");
+$(".edit-span").on("click", function (e) {
+    $(this).parent().toggleClass("completed");
+    $(this).children().children().toggleClass(".fa fa-times");
+    $(this).toggleClass("un-do");
     e.stopPropagation();
 });
 
