@@ -34,7 +34,7 @@ form .todo {
 
 form .todo h1 {
   display: inline-block;
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   padding-left: 15px;
   text-align: left;
@@ -45,14 +45,18 @@ form .todo h1 {
   font-weight: normal;
 }
 
+form .todo .todo--buttons {
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
 form .todo .buttons-right {
-  width: 5%;
-  display: inline;
-  text-align: right;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 form input {
