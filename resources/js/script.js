@@ -1,9 +1,16 @@
 //basic functionality
 
 //add click to strikethrough on list
-$("ul").on("click", "li", function (e) {
-    $(this).toggleClass("completed");
+$("#edit").on("click", function (e) {
+    $("li").toggleClass("completed");
+    $("#icon").toggleClass(".fa fa-times");
+    $("#edit").toggleClass("un-do");
+    e.stopPropagation();
 });
+
+if ($("li").hasClass("completed")) {
+   
+}
 
 $("ul").on("click", "span", function(e){
     //needed to stop click bubbling
@@ -17,11 +24,15 @@ $("ul").on("click", "span", function(e){
 $("#down").on("touch click", function (e) { 
     e.preventDefault();
     $("input[type='text']").fadeToggle(300);
+    $(this).toggleClass("arrow");
+    $("#arrow").toggleClass(".fa fa-arrow-circle-down");
+
 });
 
 //keypress event listener on input
 $("input[type='text']").on("keypress", function (e) {
     
 });
+
 
 

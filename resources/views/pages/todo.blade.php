@@ -15,7 +15,7 @@
                             <i id="plus" class="fa fa-plus"></i>
                         </button>
                         <button id="down">
-                            <i class="fa fa-arrow-circle-down"></i>
+                            <i id="arrow" class="fa fa-arrow-circle-up"></i>
                         </button>
                     </div>
                 </div>
@@ -33,11 +33,15 @@
                 <li>
                     <form method="post" action="{{ action('itemsController@destroy', $items['id']) }}">
                         @csrf
-                        <span><input name="_method" type="hidden" value="DELETE">
+                        <span class="delete"><input name="_method" type="hidden" value="DELETE">
                             <button type="submit" value="DELETE"><i class="fa fa-trash"></i></button>
                         </span>
                         <!--Display list-->
                             {{$items['list']}}
+                    
+                        <span class="edit" id="edit">
+                            <button type="button"><i id="icon" class="fa fa-check"></i></button>
+                        </span>
                     </form>
                 </li>
             </ul>
