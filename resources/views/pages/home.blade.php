@@ -10,7 +10,7 @@
                     <div class="col-sm-12">
             
                         <div class="top">
-                            <h1>Full-Stack Web Developer & Deployments</h1>
+                            <h1>JE Design and Web Development</h1>
                             <h5>I do what I love! That just so happens to be web development</h5>
                         </div>
 

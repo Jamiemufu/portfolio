@@ -1,11 +1,12 @@
 // base styles
 body {
     background-color: white;
+    font-family: $para !important;
 }
 
 // base typography
 h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     color: rgb(39, 39, 39);
     font-family: $header;
     font-weight: normal;
@@ -26,11 +27,14 @@ h5 {
     margin: auto;
     margin-top: 125px;
     text-align: center;
+    h1 {
+        margin-top: 20%;
+    }
 }
 
 .banner {
     margin: auto;
-    margin-top: 25%;
+    margin-top: 15%;
     width: 100%;
     img {
         margin: auto;
@@ -46,8 +50,8 @@ h5 {
     .title {
         margin: auto;
         width: 100%;
-        padding-top: 50px;
-        padding-bottom: 100px;
+        padding-top: 80px;
+        padding-bottom: 180px;
         h1 {
             color: white;
             font-size: 2.1rem;
@@ -70,7 +74,7 @@ h5 {
         left: 0;
         right: 0;
         position: absolute;
-        margin-top: -120px;
+        margin-top: -200px;
         width: 90%;
         background: white;
         border: 0.5px solid grey;
@@ -81,22 +85,24 @@ h5 {
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
         box-shadow: 0px 1px 0px 0px grey;
-        margin-bottom: 100px; //typographyinsidecols
+        margin-bottom: 100px; 
+        //typographyinsidecols
         h3 {
             padding: 15px 10px;
             font-size: 1.4rem;
         }
         h5 {
-            margin-top: 15px;
+            margin-top: 25px;
             color: purple;
             font-family: $para;
             font-weight: bold;
             font-size: 1.1rem;
         }
         p {
+            font-size: 1.1rem;
             margin: auto;
             width: 80%;
-            padding: 15px 0px;
+            padding: 25px 0px;
         }
         .sec-col {
             border-right: 0.5px solid grey;
@@ -110,8 +116,12 @@ h5 {
         ul {
             padding: 15px 0;
             list-style: none;
-            line-height: 25px;
+            line-height: 31px;
         }
+        li {
+            font-size: 1.1rem;
+        }
+
         @media (max-width: 765px) {
             .sec-col {
                 border: none;
