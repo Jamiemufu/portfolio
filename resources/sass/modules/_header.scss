@@ -1,0 +1,29 @@
+// HEADER
+
+header {
+    margin-top: 25px;
+
+    // header buttons
+    button {
+        padding: 10px 15px;
+        width: 150px;
+        background: none;
+        border: 2px solid purple;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        color: purple;
+        transition-duration: 0.4s;
+        font-family: $para;
+        font-weight: bold;
+}
+    button:hover {
+        color: white;
+        background-color: purple;
+    }
+
+    //header typography
+   
+}

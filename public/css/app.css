@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);/*!
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Libre+Franklin);@import url(https://fonts.googleapis.com/css?family=Lalezar|Roboto:300,400);/*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -10466,22 +10466,161 @@ a.text-dark:focus {
   }
 }
 
+header {
+  margin-top: 25px;
+}
+
+header button {
+  padding: 10px 15px;
+  width: 150px;
+  background: none;
+  border: 2px solid purple;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  color: purple;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+header button:hover {
+  color: white;
+  background-color: purple;
+}
+
 body {
-  background-color: black;
+  background-color: white;
 }
 
 h1 {
-  color: white;
+  font-size: 3rem;
+  color: #272727;
+  font-family: "Lalezar", cursive;
+  font-weight: normal;
 }
 
-.container {
+h3 {
+  font-family: "Lalezar", cursive;
+}
+
+h5 {
+  font-size: 1.3rem;
+  color: #272727;
+  font-weight: 300;
+}
+
+.top {
   margin: auto;
-  max-width: 1400px;
+  margin-top: 125px;
+  text-align: center;
 }
 
-.navbar-laravel {
-  background-color: #fff;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+.banner {
+  margin: auto;
+  margin-top: 25%;
+  width: 100%;
+}
+
+.banner img {
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+.intro {
+  margin: auto;
+  background-color: purple;
+}
+
+.intro .title {
+  margin: auto;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.intro .title h1 {
+  color: white;
+  font-size: 2.1rem;
+  font-weight: 200;
+}
+
+.intro .title h5 {
+  margin: auto;
+  max-width: 700px;
+  line-height: 28px;
+  font-size: 1.1rem;
+  margin-top: 25px;
+  color: white;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+.intro .table {
+  margin: auto;
+  max-width: 1200px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin-top: -120px;
+  width: 90%;
+  background: white;
+  border: 0.5px solid grey;
+  border-bottom: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 0px 0px grey;
+          box-shadow: 0px 1px 0px 0px grey;
+  margin-bottom: 100px;
+}
+
+.intro .table h3 {
+  padding: 15px 10px;
+  font-size: 1.4rem;
+}
+
+.intro .table h5 {
+  margin-top: 15px;
+  color: purple;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.intro .table p {
+  margin: auto;
+  width: 80%;
+  padding: 15px 0px;
+}
+
+.intro .table .sec-col {
+  border-right: 0.5px solid grey;
+}
+
+.intro .table i {
+  font-size: 50px;
+  color: purple;
+  padding: 30px 0;
+  font-weight: bolder;
+}
+
+.intro .table ul {
+  padding: 15px 0;
+  list-style: none;
+  line-height: 25px;
+}
+
+@media (max-width: 765px) {
+  .intro .table .sec-col {
+    border: none;
+    border-bottom: 0.5px solid grey;
+  }
 }
 
