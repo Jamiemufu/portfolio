@@ -10480,82 +10480,6 @@ header button:hover {
   background-color: purple;
 }
 
-footer {
-  background-color: purple;
-}
-
-footer h1,
-footer h2,
-footer h3,
-footer h4,
-footer h5,
-footer p,
-footer i {
-  color: white;
-}
-
-footer h2 {
-  padding-top: 25px;
-  font-size: 0.8rem;
-}
-
-footer ul {
-  list-style: none;
-  padding: 0;
-  padding-top: 40px;
-}
-
-footer ul li {
-  padding: 10px 15px;
-  overflow: hidden;
-  display: inline-block;
-}
-
-footer button {
-  margin-top: 40px;
-  margin-bottom: 15px;
-  width: 200px;
-  border-color: white;
-  color: white;
-}
-
-footer button:hover {
-  color: purple;
-  background: white;
-}
-
-footer .copy {
-  opacity: 0.8;
-}
-
-footer .icons {
-  margin: auto;
-}
-
-footer .icons i {
-  padding: 10px;
-  background: purple;
-  border-radius: 50%;
-  color: white;
-  font-size: 20px;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-  border: 2px solid white;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-footer .icons li:hover i {
-  background: white;
-  color: purple;
-}
-
-footer .top {
-  margin-top: 80px;
-}
-
 body {
   background-color: white;
   font-family: "Roboto", sans-serif !important;
@@ -10875,5 +10799,81 @@ h5 {
 .examples .more span {
   text-align: left;
   margin-left: 10px;
+}
+
+footer {
+  background-color: purple;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer p,
+footer i {
+  color: white;
+}
+
+footer h2 {
+  padding-top: 25px;
+  font-size: 0.8rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  padding-top: 40px;
+}
+
+footer ul li {
+  padding: 10px 15px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+footer button {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  width: 200px;
+  border-color: white;
+  color: white;
+}
+
+footer button:hover {
+  color: purple;
+  background: white;
+}
+
+footer .copy {
+  opacity: 0.8;
+}
+
+footer .icons {
+  margin: auto;
+}
+
+footer .icons i {
+  padding: 10px;
+  background: purple;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  border: 2px solid white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+footer .icons li:hover i {
+  background: white;
+  color: purple;
+}
+
+footer .top {
+  margin-top: 80px;
 }
 
