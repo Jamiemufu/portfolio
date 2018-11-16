@@ -10483,7 +10483,6 @@ header button:hover {
 body {
   background-color: white;
   font-family: "Roboto", sans-serif !important;
-  overflow-x: hidden;
 }
 
 button {
@@ -10649,7 +10648,6 @@ h5 {
 }
 
 .examples {
-  padding: 20px 0;
   margin: auto;
   display: block;
 }
@@ -10685,12 +10683,6 @@ h5 {
   -o-border-radius: 5px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-@media (max-width: 765px) {
-  .examples .ex-con {
-    width: 80%;
-  }
 }
 
 .examples img {

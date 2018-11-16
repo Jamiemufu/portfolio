@@ -2,7 +2,7 @@
 body {
     background-color: white;
     font-family: $para !important;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 button {
@@ -155,7 +155,7 @@ h5 {
 
 //example section
 .examples {
-    padding: 20px 0;
+    
     margin: auto;
     display: block;
     .title {
@@ -185,11 +185,6 @@ h5 {
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
         object-fit: cover;
-    }
-    @media (max-width: 765px) {
-        .ex-con {
-          width: 80%;
-        }
     }
     img {
         width: 100%;

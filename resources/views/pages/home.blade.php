@@ -122,7 +122,7 @@
         </div>
     </div>
     <!-- examples start -->
-    <div class="container examples" onclick="void(0)">
+    <div class="container examples">
         <div class="row text-center">
             <!--Firsr example-->
             <div class="col-12 col-md-6 col-lg-4 text-center">
