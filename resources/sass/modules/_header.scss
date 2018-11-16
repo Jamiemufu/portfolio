@@ -4,6 +4,7 @@ header {
     margin-top: 25px;
 
     button {
+        margin-top: 10px;
         border: 2px solid purple;
         color: purple;
     }
@@ -11,5 +12,9 @@ header {
     button:hover {
         color: white;
         background-color: purple;
+    }
+    img {
+        width: 50px;
+        height: auto;
     }
 }

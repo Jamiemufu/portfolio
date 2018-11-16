@@ -127,7 +127,7 @@
             <!--Firsr example-->
             <div class="col-12 col-md-6 col-lg-4 text-center">
                 <div class="ex-con text-center">
-                    <img src="images/rank.jpg" alt="rank">
+                    <img class="bg" src="images/rank.jpg" alt="rank">
                     <div class="overlay">
                         <div class="middle">
                             <h3>Grovsenor Casinos</h3>
@@ -139,6 +139,7 @@
                                 <i class="fab fa-php"></i>
                             </p>
                             <button>Visit Site</button>
+                            <img src="images/icon_white.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -146,7 +147,7 @@
             <!-- second example -->
             <div class="col-12 col-md-6 col-lg-4 text-center">
                 <div class="ex-con">
-                    <img src="images/wwprizes.jpg" alt="rank">
+                    <img class="bg" src="images/wwprizes.jpg" alt="rank">
                     <div class="overlay">
                         <div class="middle">
                             <h3>WeightWatchers UK</h3>
@@ -158,6 +159,7 @@
                                 <i class="fab fa-php"></i>
                             </p>
                             <button>Visit Site</button>
+                            <img src="images/icon_white.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -165,7 +167,7 @@
             <!-- third example -->
             <div class="col-12 col-md-6 col-lg-4 text-center">
                 <div class="ex-con">
-                    <img src="images/regus.jpg" alt="rank">
+                    <img class="bg" src="images/regus.jpg" alt="rank">
                     <div class="overlay">
                         <div class="middle">
                             <h3>Regus UK</h3>
@@ -177,14 +179,15 @@
                                 <i class="fab fa-php"></i>
                             </p>
                             <button>Visit Site</button>
+                            <img src="images/icon_white.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
             <!-- fouth example -->
-            <div class="col-12 col-md-6 col-lg-4 text-center">
+            <div class="col-12 col-md-6 col-lg-4 text-center hide">
                 <div class="ex-con">
-                    <img src="images/namco.jpg" alt="rank">
+                    <img class="bg" src="images/namco.jpg" alt="rank">
                     <div class="overlay">
                         <div class="middle">
                             <h3>Namco Funscape!</h3>
@@ -196,14 +199,15 @@
                                 <i class="fab fa-php"></i>
                             </p>
                             <button>Visit Site</button>
+                            <img src="images/icon_white.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
             <!-- fifth example -->
-            <div class="col-12 col-md-6 col-lg-4 text-center">
+            <div class="col-12 col-md-6 col-lg-4 text-center hide">
                 <div class="ex-con">
-                    <img src="images/mecca.jpg" alt="rank">
+                    <img class="bg" src="images/mecca.jpg" alt="rank">
                     <div class="overlay">
                         <div class="middle">
                             <h3>Mecca Bingo</h3>
@@ -215,14 +219,15 @@
                                 <i class="fab fa-php"></i>
                             </p>
                             <button>Visit Site</button>
+                            <img src="images/icon_white.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
             <!-- sixth example -->
-            <div class="col-12 col-md-6 col-lg-4 text-center">
+            <div class="col-12 col-md-6 col-lg-4 text-center hide">
                 <div class="ex-con">
-                    <img src="images/bunzl.jpg" alt="rank">
+                    <img class="bg" src="images/bunzl.jpg" alt="rank">
                     <div class="overlay">
                         <div class="middle">
                             <h3>Bunzl</h3>
@@ -234,6 +239,7 @@
                                 <i class="fab fa-php"></i>
                             </p>
                             <button>Visit Site</button>
+                            <img src="images/icon_white.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -249,5 +255,6 @@
     </div>
 </section>
 <!--end examples section-->
+
 
 @endsection
