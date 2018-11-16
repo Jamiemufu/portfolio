@@ -10685,6 +10685,16 @@ h5 {
      object-fit: cover;
 }
 
+@media (max-width: 750px) {
+  .examples .ex-con {
+    width: 90%;
+  }
+
+  .examples .col-12 {
+    padding: 15px 0;
+  }
+}
+
 .examples img {
   width: 100%;
   display: block;

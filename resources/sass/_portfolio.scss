@@ -185,7 +185,16 @@ h5 {
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
         object-fit: cover;
-}
+    }
+    @media (max-width:750px) {
+        .ex-con {
+            width: 90%;
+            
+        }
+        .col-12 {
+            padding: 15px 0;
+        }
+    }
     img {
         width: 100%;
         display: block;
