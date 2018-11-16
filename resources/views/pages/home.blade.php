@@ -240,7 +240,7 @@
             </div>
 
             <div class="col-12 more">
-                <button><span class="text-left">See more</span><i class="fab fa-codepen text-right"
+                <button><span>See more</span><i class="fab fa-codepen"
                         aria-hidden="true"></i></button>
             </div>
             <!-- end examples -->

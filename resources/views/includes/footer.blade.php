@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-12 icons text-center">
+                <div class="col-12 col-md-12 icons text-center">
                    <h5 class="top copy">Have a project you want to collaborate on?</h5>
                    <h5 class="copy">Find my details below</h5>
 
