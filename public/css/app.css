@@ -10542,7 +10542,7 @@ h5 {
 
 .top h1 {
   margin-top: 15%;
-  color: black;
+  color: #1b1b1b;
 }
 
 .banner {
@@ -10646,12 +10646,12 @@ h5 {
 }
 
 .examples .title h1 {
-  color: black;
+  color: #1b1b1b;
 }
 
 .examples .title h5 {
   margin: auto;
-  color: black;
+  color: #1b1b1b;
 }
 
 @media (max-width: 500px) {
@@ -10773,7 +10773,7 @@ h5 {
 
 .examples .overlay button:hover {
   background: white;
-  color: black;
+  color: #1b1b1b;
 }
 
 .examples .overlay img {
@@ -10791,14 +10791,14 @@ h5 {
 }
 
 .examples .more {
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 .examples .more button {
   text-align: left;
   position: relative;
   padding: 0;
-  width: 125px;
+  width: 150px;
   font-size: 16px;
   height: 40px;
 }
@@ -10817,6 +10817,129 @@ h5 {
 .examples .more span {
   text-align: left;
   margin-left: 10px;
+}
+
+.test {
+  margin: auto;
+  background-color: purple;
+}
+
+.test .title {
+  padding-bottom: 50px;
+  margin: 0;
+}
+
+.test .title h5 {
+  margin-top: -5px;
+}
+
+.test img {
+  width: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.test .quote {
+  margin: auto;
+  max-width: 700px;
+  line-height: 28px;
+  font-size: 1.1rem;
+  padding: 50px 0;
+  color: white;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+.test .quote:before {
+  color: #fff;
+  content: open-quote;
+  font-size: 2em;
+  line-height: 0.1em;
+  margin-right: 4px;
+  vertical-align: -0.2em;
+}
+
+.test .quote:after {
+  color: #fff;
+  content: close-quote;
+  font-size: 2em;
+  line-height: 0.2em;
+  margin-left: 4px;
+  vertical-align: -0.2em;
+}
+
+.test .author {
+  margin-top: -25px;
+  color: white;
+  font-family: "Lalezar", cursive;
+  font-size: 1.4rem;
+}
+
+.test .company {
+  margin-top: -20px;
+  color: white;
+  font-weight: lighter;
+  padding-bottom: 60px;
+}
+
+.contact-form {
+  padding: 50px 0;
+}
+
+.contact-form .title {
+  width: 100%;
+  padding: 0 25px;
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+.contact-form .title h5,
+.contact-form .title h1 {
+  color: black;
+  margin-top: -5px;
+}
+
+form {
+  width: 60%;
+  padding-top: 50px;
+  margin: auto;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+form input {
+  border: 0.5px solid purple;
+  margin: auto;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+}
+
+form textarea {
+  border: 0.5px solid purple;
+  margin-top: 25px;
+  width: 100%;
+}
+
+form button {
+  color: white;
+  background: purple;
+  margin-top: 25px;
+}
+
+form button:hover {
+  background: white;
+  color: purple;
+}
+
+@media (max-width: 750px) {
+  form {
+    width: 90%;
+  }
 }
 
 header {
@@ -10886,7 +11009,7 @@ footer .map-container {
 }
 
 footer .map-container .map {
-  margin-top: 40px;
+  margin-top: 25px;
   width: 50%;
   padding: 0;
   max-width: 600px;
@@ -10898,11 +11021,11 @@ footer .map-container .map {
 }
 
 footer .map-container h3 {
-  color: black;
+  color: #1b1b1b;
 }
 
 footer .map-container h5 {
-  color: black;
+  color: #1b1b1b;
   margin-top: -10px;
   padding-bottom: 15px;
 }

@@ -246,8 +246,7 @@
             </div>
 
             <div class="col-12 more">
-                <button><span>See more</span><i class="fab fa-codepen"
-                        aria-hidden="true"></i></button>
+                <button><span>See more</span><i class="fab fa-codepen" aria-hidden="true"></i></button>
             </div>
             <!-- end examples -->
         </div>
@@ -255,17 +254,55 @@
     </div>
 </section>
 <!--end examples section-->
+
+<!-- TODO - ADD TESTIMONIALS - ADD PROPER LEADING CONTACT BLOCK OR FORM -->
+
 <!-- contact section -->
 <section>
-    <div class="container">
-        <div class="container">
+    <div class="container-fluid test">
+        <div class="container text-center">
             <div class="row">
                 <div class="col-12">
-
+                    <div class="title">
+                        <h1>Testimonials</h1>
+                        <h5>This is what people who work with me say...</h5>
+                    </div>
+                    <img src="images/trump.jpg" alt="">
+                    <h5 class="quote">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio praesentium
+                        nihil quos doloribus? Vel at, cupiditate repellendus et eos porro praesentium nemo distinctio
+                        magni iste. Voluptates asperiores recusandae aperiam quis!</h5>
+                    <p class="author">Donald Trump</p>
+                    <p class="company">President USA</p>
                 </div>
             </div>
         </div>
-        
+
+    </div>
+</section>
+<!--end contact section-->
+<!--FORM-->
+<section>
+    <div class="container contact-form text-center">
+        <div class="title">
+            <h1>If you need a chat, fill out the form. Coffee is on me</h1>
+            <h5>I would love to hear about furture work or projects</h5>
+        </div>
+        <form action="">
+            <div class="row">
+                <div class="col-12 col-md-6 text-center">
+                    <input type="text" name="" id="" placeholder="Name">
+                    <input type="text" name="" id="" placeholder="Location">
+                </div>
+                <div class="col">
+                        <input type="text" name="" id="" placeholder="Email">
+                        <input type="text" name="" id="" placeholder="Budget">
+                </div>
+                <div class="col-12">
+                    <textarea name="" id="" cols="90" rows="10" placeholder=""></textarea>
+                    <button>Submit</button>
+                </div>
+            </div>
+        </form>
     </div>
 </section>
 
