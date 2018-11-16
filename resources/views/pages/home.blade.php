@@ -255,6 +255,18 @@
     </div>
 </section>
 <!--end examples section-->
+<!-- contact section -->
+<section>
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
 
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
 
 @endsection
