@@ -10466,20 +10466,6 @@ a.text-dark:focus {
   }
 }
 
-header {
-  margin-top: 25px;
-}
-
-header button {
-  border: 2px solid purple;
-  color: purple;
-}
-
-header button:hover {
-  color: white;
-  background-color: purple;
-}
-
 body {
   background-color: white;
   font-family: "Roboto", sans-serif !important;
@@ -10700,8 +10686,8 @@ h5 {
 .examples img {
   width: 100%;
   display: block;
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
 }
@@ -10713,6 +10699,13 @@ h5 {
 
 .examples .ex-con:hover .overlay {
   opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  filter: blur(0);
+  -webkit-filter: blur(0);
 }
 
 .examples .ex-con:hover img {
@@ -10721,8 +10714,8 @@ h5 {
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
   -o-transform: scale(1.5);
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
 }
 
 .examples .overlay {
@@ -10733,12 +10726,15 @@ h5 {
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
   opacity: 0;
-  -webkit-transition-duration: 0.7s;
-          transition-duration: 0.7s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
 }
 
 .examples .overlay h3 {
@@ -10762,7 +10758,7 @@ h5 {
 
 .examples .overlay button:hover {
   background: white;
-  color: purple;
+  color: black;
 }
 
 .examples .middle {
@@ -10799,6 +10795,20 @@ h5 {
 .examples .more span {
   text-align: left;
   margin-left: 10px;
+}
+
+header {
+  margin-top: 25px;
+}
+
+header button {
+  border: 2px solid purple;
+  color: purple;
+}
+
+header button:hover {
+  color: white;
+  background-color: purple;
 }
 
 footer {
@@ -10868,12 +10878,12 @@ footer .icons i {
   -o-border-radius: 50%;
 }
 
-footer .icons li:hover i {
-  background: white;
-  color: purple;
-}
-
 footer .top {
   margin-top: 80px;
+}
+
+footer span:hover i {
+  background: white;
+  color: purple;
 }
 

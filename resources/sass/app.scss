@@ -10,11 +10,12 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+//pages
+@import 'portfolio';
+
 //modules
 @import 'modules/header';
-@import 'portfolio';
 @import 'modules/footer';
-//main
 
 
 

@@ -29,7 +29,11 @@
         @include('includes.footer')
     </footer>
 
-    {{-- JS Scripts app.js includes bootstrap--}}
+    {{-- IF TODO --}}
+    @if ($_SERVER['REQUEST_URI'] === '/todo') 
+   <script src="stylesheet" href="{{ mix('/js/todo..js') }}"></script>
+    @endif
+      {{-- JS Scripts app.js includes bootstrap--}}
     <script src="{{ mix('/js/app.js') }}"></script>
     <script src="{{ mix('/js/script.js') }}"></script>
 
