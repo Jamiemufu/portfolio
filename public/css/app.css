@@ -10656,6 +10656,7 @@ h5 {
 
 .examples .title {
   width: 100%;
+  padding: 0;
 }
 
 .examples .title h1 {
