@@ -10480,6 +10480,82 @@ header button:hover {
   background-color: purple;
 }
 
+footer {
+  background-color: purple;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer p,
+footer i {
+  color: white;
+}
+
+footer h2 {
+  padding-top: 25px;
+  font-size: 0.8rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  padding-top: 40px;
+}
+
+footer ul li {
+  padding: 0 15px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+footer .icons {
+  margin: auto;
+}
+
+footer .icons i {
+  padding: 10px;
+  background: purple;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  border: 2px solid white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+footer .icons li:hover i {
+  background: white;
+  color: purple;
+}
+
+footer .top {
+  margin-top: 80px;
+}
+
+footer button {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  width: 200px;
+  border-color: white;
+  color: white;
+}
+
+footer button:hover {
+  color: purple;
+  background: white;
+}
+
+footer .copy {
+  opacity: 0.8;
+}
+
 body {
   background-color: white;
   font-family: "Roboto", sans-serif !important;
@@ -10579,12 +10655,12 @@ h5 {
 
 .intro .table {
   margin: auto;
-  max-width: 1200px;
+  max-width: 800px;
   left: 0;
   right: 0;
   position: relative;
   margin-top: -250px;
-  width: 90%;
+  width: 100%;
   background: white;
   border: 0.5px solid grey;
   border-bottom: none;
@@ -10615,10 +10691,11 @@ h5 {
   font-size: 1rem;
   margin: auto;
   width: 80%;
-  padding: 25px 0px;
+  padding: 15px 0px;
 }
 
 .intro .table .sec-col {
+  width: 33.3%;
   border-right: 0.5px solid grey;
 }
 
@@ -10641,6 +10718,7 @@ h5 {
 
 @media (max-width: 765px) {
   .intro .table .sec-col {
+    width: 95%;
     border: none;
     border-bottom: 0.5px solid grey;
   }
@@ -10672,7 +10750,7 @@ h5 {
 
 .examples .ex-con {
   margin: auto;
-  width: 100%;
+  width: 90%;
   overflow: hidden;
   position: relative;
   border: 0.5px solid purple;
@@ -10687,7 +10765,7 @@ h5 {
 
 @media (max-width: 750px) {
   .examples .ex-con {
-    width: 90%;
+    width: 80%;
   }
 
   .examples .col-12 {
@@ -10775,11 +10853,25 @@ h5 {
 }
 
 .examples .more button {
-  width: 175px;
+  text-align: left;
+  position: relative;
+  padding: 0;
+  width: 150px;
   font-size: 16px;
+  height: 40px;
 }
 
 .examples .more i {
-  font-size: 16px;
+  position: absolute;
+  right: 0;
+  right: 5px;
+  top: 0;
+  top: -3px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.examples .more span {
+  margin-left: 10px;
 }
 

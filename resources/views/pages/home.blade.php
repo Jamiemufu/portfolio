@@ -25,7 +25,7 @@
 <!-- intro section -->
 <section>
     <div class="container-fluid intro">
-        <div class="container text-center">
+        <div class="container-fluid text-center">
             <div class="row title">
                 <div class="col-12 text-center">
 
@@ -122,7 +122,7 @@
         </div>
     </div>
     <!-- examples start -->
-    <div class="container examples" onclick="void()">
+    <div class="container examples" onclick="">
         <div class="row text-center">
             <!--Firsr example-->
             <div class="col-12 col-md-6 col-lg-4 text-center">
@@ -240,7 +240,7 @@
             </div>
 
             <div class="col-12 more">
-                <button>See more <i class="fab fa-github" aria-hidden="true"></i>&nbsp;<i class="fab fa-codepen"
+                <button><span class="text-left">See more</span><i class="fab fa-codepen text-right"
                         aria-hidden="true"></i></button>
             </div>
             <!-- end examples -->
