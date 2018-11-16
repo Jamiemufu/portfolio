@@ -42,7 +42,7 @@
                 <!-- dev col -->
                 <div class="col-12 col-md-4 sec-col">
                     <div>
-                        <i class="fa fa-code"></i>
+                        <i class="fas fa-code"></i>
                         <h3>Develop</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis cupiditate, sit in
                             rerum dolorem enim similique veniam.</p>
@@ -63,7 +63,7 @@
                 <!-- deploy col -->
                 <div class="col-12 col-md-4 sec-col">
                     <div>
-                        <i class="fa fa-terminal"></i>
+                        <i class="fas fa-terminal"></i>
                         <h3>Deploy</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis cupiditate, sit in
                             rerum dolorem enim similique veniam.</p>
@@ -83,7 +83,7 @@
                 <!-- enjoy col -->
                 <div class="col-12 col-md-4">
                     <div>
-                        <i class="fa fa-coffee"></i>
+                        <i class="fas fa-coffee"></i>
                         <h3>Enjoy</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis cupiditate, sit in
                             rerum dolorem enim similique veniam.</p>
@@ -115,7 +115,7 @@
         <div class="row text-center">
             <div class="col-12 col-md-12 text-center">
                 <div class="title">
-                    <h1>This is some of my recent work.</h1>
+                    <h1>This is some of my recent work</h1>
                     <h5>If you would like to work together why not contact me?</h5>
                 </div>
             </div>
@@ -131,7 +131,13 @@
                     <div class="overlay">
                         <div class="middle">
                             <h3>Grovsenor Casinos</h3>
-                            <p>HTML, CSS, PHP, MYSQL</p>
+                            <p>
+                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-css3-alt"></i>
+                                <i class="fas fa-database"></i>
+                                <i class="fab fa-js-square"></i>
+                                <i class="fab fa-php"></i>
+                            </p>
                             <button>Visit Site</button>
                         </div>
                     </div>
@@ -144,7 +150,13 @@
                     <div class="overlay">
                         <div class="middle">
                             <h3>WeightWatchers UK</h3>
-                            <p>HTML, LESS, PHP, MYSQL, JS, API'S</p>
+                            <p>
+                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-css3-alt"></i>
+                                <i class="fas fa-database"></i>
+                                <i class="fab fa-js-square"></i>
+                                <i class="fab fa-php"></i>
+                            </p>
                             <button>Visit Site</button>
                         </div>
                     </div>
@@ -157,7 +169,13 @@
                     <div class="overlay">
                         <div class="middle">
                             <h3>Regus UK</h3>
-                            <p>HTML, CSS, BOOTSTRAP, JS</p>
+                            <p>
+                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-css3-alt"></i>
+                                <i class="fas fa-database"></i>
+                                <i class="fab fa-js-square"></i>
+                                <i class="fab fa-php"></i>
+                            </p>
                             <button>Visit Site</button>
                         </div>
                     </div>
@@ -170,7 +188,13 @@
                     <div class="overlay">
                         <div class="middle">
                             <h3>Namco Funscape!</h3>
-                            <p>HTML, LESS, PHP, BOOTSRAP, MYSQL</p>
+                            <p>
+                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-css3-alt"></i>
+                                <i class="fas fa-database"></i>
+                                <i class="fab fa-js-square"></i>
+                                <i class="fab fa-php"></i>
+                            </p>
                             <button>Visit Site</button>
                         </div>
                     </div>
@@ -183,7 +207,13 @@
                     <div class="overlay">
                         <div class="middle">
                             <h3>Mecca Bingo</h3>
-                            <p>HTML, CSS, JS, PHP, MYSQL</p>
+                            <p>
+                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-css3-alt"></i>
+                                <i class="fas fa-database"></i>
+                                <i class="fab fa-js-square"></i>
+                                <i class="fab fa-php"></i>
+                            </p>
                             <button>Visit Site</button>
                         </div>
                     </div>
@@ -196,7 +226,13 @@
                     <div class="overlay">
                         <div class="middle">
                             <h3>Bunzl</h3>
-                            <p>HTML, CSS, JS, PHP, MYSQL, FORMS</p>
+                            <p>
+                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-css3-alt"></i>
+                                <i class="fas fa-database"></i>
+                                <i class="fab fa-js-square"></i>
+                                <i class="fab fa-php"></i>
+                            </p>
                             <button>Visit Site</button>
                         </div>
                     </div>
@@ -204,7 +240,8 @@
             </div>
 
             <div class="col-12 more">
-                <button>See more <i class="fa fa-github" aria-hidden="true"></i>&nbsp;<i class="fa fa-codepen" aria-hidden="true"></i></button>
+                <button>See more <i class="fab fa-github" aria-hidden="true"></i>&nbsp;<i class="fab fa-codepen"
+                        aria-hidden="true"></i></button>
             </div>
             <!-- end examples -->
         </div>

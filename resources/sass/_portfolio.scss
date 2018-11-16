@@ -160,6 +160,7 @@ h5 {
     .title {
         width: 100%;
         padding: 0;
+       padding-bottom: 75px;
         h1 {
             color: black;
         }
@@ -170,7 +171,7 @@ h5 {
        
     }
     .col-12 {
-        padding: 25px;
+        padding: 10px;
     }
     .ex-con {
         margin: auto;
@@ -184,14 +185,17 @@ h5 {
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
         object-fit: cover;
-    }
+}
     img {
         width: 100%;
         display: block;
         transition-delay: 0.2s;
         transition-duration: 0.4s;
     }
-
+     i {
+         font-size: 26px;
+         padding: 10px 5px;
+     }
     .ex-con:hover .overlay {
         opacity: 1;
     }
@@ -244,6 +248,7 @@ h5 {
         transform: translateY(-50%);
     }
     .more {
+        padding: 50px 0;
         button {
         width: 175px;
         padding: 7px 0;

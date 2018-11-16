@@ -10654,6 +10654,7 @@ h5 {
 .examples .title {
   width: 100%;
   padding: 0;
+  padding-bottom: 75px;
 }
 
 .examples .title h1 {
@@ -10666,7 +10667,7 @@ h5 {
 }
 
 .examples .col-12 {
-  padding: 25px;
+  padding: 10px;
 }
 
 .examples .ex-con {
@@ -10691,6 +10692,11 @@ h5 {
           transition-delay: 0.2s;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
+}
+
+.examples i {
+  font-size: 26px;
+  padding: 10px 5px;
 }
 
 .examples .ex-con:hover .overlay {
@@ -10752,6 +10758,10 @@ h5 {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.examples .more {
+  padding: 50px 0;
 }
 
 .examples .more button {
