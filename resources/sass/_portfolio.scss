@@ -2,6 +2,27 @@
 body {
     background-color: white;
     font-family: $para !important;
+    overflow-x: hidden;
+}
+
+button {
+    padding: 5px 15px;
+    width: 150px;
+    background: none;
+    border: 2px solid purple;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    color: purple;
+    transition-duration: 0.4s;
+    font-family: $para;
+    font-weight: bold;
+}
+button:hover {
+    color: white;
+    background-color: purple;
 }
 
 // base typography
@@ -22,13 +43,37 @@ h5 {
     font-weight: 300;
 }
 
+.title {
+    margin: auto;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 180px;
+    h1 {
+        color: white;
+        font-size: 2.1rem;
+        font-weight: 200;
+    }
+    h5 {
+        margin: auto;
+        max-width: 700px;
+        line-height: 28px;
+        font-size: 1.1rem;
+        margin-top: 25px;
+        color: white;
+        font-weight: 300;
+        font-family: $para;
+    }
+}
+
 // hero section
 .top {
     margin: auto;
-    margin-top: 125px;
+    margin-top: 50px;
     text-align: center;
     h1 {
-        margin-top: 20%;
+        margin-top: 15%;
+        color: black;
+        text-shadow: 1px 1px 1px purple;
     }
 }
 
@@ -46,35 +91,14 @@ h5 {
 // intro section
 .intro {
     margin: auto;
-    background-color: purple;
-    .title {
-        margin: auto;
-        width: 100%;
-        padding-top: 80px;
-        padding-bottom: 180px;
-        h1 {
-            color: white;
-            font-size: 2.1rem;
-            font-weight: 200;
-        }
-        h5 {
-            margin: auto;
-            max-width: 700px;
-            line-height: 28px;
-            font-size: 1.1rem;
-            margin-top: 25px;
-            color: white;
-            font-weight: 300;
-            font-family: $para;
-        }
-    }
+    background-image: linear-gradient(bottom, white 50%, purple 50%);
     .table {
         margin: auto;
         max-width: 1200px;
         left: 0;
         right: 0;
-        position: absolute;
-        margin-top: -200px;
+        position: relative;
+        margin-top: -250px;
         width: 90%;
         background: white;
         border: 0.5px solid grey;
@@ -85,21 +109,20 @@ h5 {
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
         box-shadow: 0px 1px 0px 0px grey;
-        margin-bottom: 100px; 
-        //typographyinsidecols
+        margin-bottom: 100px; //typographyinsidecols
         h3 {
-            padding: 15px 10px;
+            padding: 10px 10px;
             font-size: 1.4rem;
         }
         h5 {
-            margin-top: 25px;
+            margin-top: 10px;
             color: purple;
             font-family: $para;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
         p {
-            font-size: 1.1rem;
+            font-size: 1rem;
             margin: auto;
             width: 80%;
             padding: 25px 0px;
@@ -119,14 +142,121 @@ h5 {
             line-height: 31px;
         }
         li {
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
-
         @media (max-width: 765px) {
             .sec-col {
                 border: none;
                 border-bottom: 0.5px solid grey;
             }
+        }
+    }
+}
+
+//example section
+.examples {
+    padding: 20px 0;
+    margin: auto;
+    display: block;
+    .title {
+        width: 100%;
+        h1 {
+            color: black;
+        }
+        h5 {
+            margin: auto;
+            color: black;
+        }
+       
+    }
+    .col-12 {
+        padding: 25px;
+    }
+    .ex-con {
+        margin: auto;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        border: 0.5px solid purple;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        object-fit: cover;
+    }
+    @media (max-width: 765px) {
+        .ex-con {
+          width: 50%;
+        }
+    }
+    img {
+        width: 100%;
+        display: block;
+        transition-delay: 0.2s;
+        transition-duration: 0.4s;
+    }
+
+    .ex-con:hover .overlay {
+        opacity: 1;
+    }
+    .ex-con:hover img {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+        opacity: 0.3;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom:0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(128, 0, 128, 1);
+        opacity: 0;
+        transition-duration: 0.7s;
+        transition-delay: 0.2s;
+        h3 {
+            color: white;
+            font-size: 1.6rem;
+        }
+        p {
+            padding: 0 10px;
+            color: white;
+            font-size: 0.8rem;
+        }
+        button {
+            padding: 2px 0;
+            width: 125px;
+            color: white;
+            border: 1px solid white;
+            font-weight: normal;
+        }
+        button:hover {
+            background: white;
+            color: purple;
+        }
+    }
+    .middle {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .more {
+        button {
+        width: 175px;
+        padding: 7px 0;
+        font-size: 16px;
+        }
+        i {
+            font-size: 20px;
         }
     }
 }
