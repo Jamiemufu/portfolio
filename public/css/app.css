@@ -10927,6 +10927,7 @@ form input {
   width: 100%;
   padding: 10px;
   color: grey;
+  font-size: 18px;
 }
 
 form textarea {
@@ -11015,12 +11016,12 @@ footer ul li {
 
 footer .copy {
   opacity: 0.8;
-  padding-bottom: 55px;
 }
 
 footer .copy--bottom {
   padding: 0;
   padding-top: 25px;
+  opacity: 0.5;
 }
 
 footer .map-container {
@@ -11054,6 +11055,10 @@ footer .map-container #map {
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 @media (max-width: 500px) {
@@ -11082,13 +11087,13 @@ footer .icons i {
 }
 
 footer .icons img {
-  padding-bottom: 25px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   width: 100px;
   height: auto;
 }
 
 footer .top {
-  margin-top: 80px;
   padding-bottom: 2px;
 }
 

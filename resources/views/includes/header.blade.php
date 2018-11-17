@@ -6,7 +6,7 @@
             <div>
                 <img src="images/icon_purple.png" alt="JE Design">
                 <a href="#form_title">
-                    <button class="float-right">Come say Hi!</button>
+                    <button class="float-right">Contact me</button>
                 </a>
             </div>
 

@@ -11,7 +11,7 @@
 
                 <div class="top">
                     <h1>JE Design & Development</h1>
-                    <h5>I love what I do, I also love doing it</h5>
+                    <h5>I am lucky enough to do what I love. I thought it was about time to share</h5>
                 </div>
 
                 <img class="banner" src="images/banner.jpg" alt="Banner">
@@ -44,18 +44,17 @@
                     <div>
                         <i class="fas fa-code"></i>
                         <h3>Develop</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis cupiditate, sit in
-                            rerum dolorem enim similique veniam.</p>
-                        <h5>Things I can do</h5>
-                        <p>HTML, CSS, Javascript, PHP, Node.js </p>
-                        <h5>Tools for the job!</h5>
+                        <p>I code in all sorts of languages, which language depends on the given task at hand</p>
+                        <h5>Technologies I use</h5>
+                        <p>HTML, CSS, Javascript, PHP, Node.js and more</p>
+                        <h5>Tools for the job</h5>
                         <ul>
                             <li>VSCode</li>
                             <li>LESS/SASS</li>
                             <li>BitBucket</li>
                             <li>Github</li>
                             <li>Bootstrap</li>
-                            <li>Laravel/Symfony</li>
+                            <li>Libraries</li>
                             <li>Imagination!</li>
                         </ul>
                     </div>
@@ -65,17 +64,17 @@
                     <div>
                         <i class="fas fa-terminal"></i>
                         <h3>Deploy</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis cupiditate, sit in
-                            rerum dolorem enim similique veniam.</p>
-                        <h5>Where do you need it?</h5>
+                        <p>I don't just code. I can also deploy. From setting up Ubuntu or using Cpanel</p>
+                        <h5>Where do you need it</h5>
                         <p>Heroku, git, AWS, GoogleCloud, GoDaddy</p>
-                        <h5>Anything else?</h5>
+                        <h5>Anything else</h5>
                         <ul>
                             <li>Install Ubuntu</li>
                             <li>Set up MYSQL</li>
                             <li>Setup PHP</li>
+                            <li>Setup Node.js</li>
                             <li>Deploy via Git/SSH</li>
-                            <li>Dev site for progress checks</li>
+                            <li>Dev sites</li>
                             <li>Deploy to production</li>
                         </ul>
                     </div>
@@ -85,17 +84,17 @@
                     <div>
                         <i class="fas fa-coffee"></i>
                         <h3>Enjoy</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis cupiditate, sit in
-                            rerum dolorem enim similique veniam.</p>
+                        <p>Because I can build and deploy, your website is one thing you dont need to worry about</p>
                         <h5>Sit back and relax</h5>
-                        <p>Everything will get taken care of</p>
-                        <h5>Maintenance you say?</h5>
+                        <p>Everything will get taken care of, enjoy the break</p>
+                        <h5>Maintenance you say</h5>
                         <ul>
                             <li>Updates</li>
                             <li>Amends</li>
                             <li>Re-factoring code</li>
                             <li>Re-Designs</li>
-                            <li>Anything I can do to help</li>
+                            <li>Domain registration</li>
+                            <li>Automated services</li>
                         </ul>
                     </div>
                 </div>
@@ -114,8 +113,8 @@
         <div class="row text-center">
             <div class="col-12 col-md-12 text-center">
                 <div class="title">
-                    <h1>This is some of my recent work</h1>
-                    <h5>If you would like to work together why not contact me?</h5>
+                    <h1>Recent work</h1>
+                    <h5>This is some of my recent work. Feel free to take a look</h5>
                 </div>
             </div>
         </div>
@@ -283,25 +282,25 @@
 <section>
     <div class="container contact-form text-center" id="form_title">
         <div class="title">
-            <h1>If you need a chat, fill out the form. Coffee is on me</h1>
+            <h1>If you would like a chat, fill out the form. Coffee is on me</h1>
             <h5>I would love to hear about furture work or projects</h5>
         </div>
         <form action="">
             <div class="row text-center">
                 <div class="col-12 col-md-6 text-left">
-                    <label for="name">Name</label>
+                    <label for="name">Name*</label>
                     <input type="text" name="name" id="" required>
-                    <label for="location">Location</label>
+                    <label for="location">Location*</label>
                     <input type="text" name="location" id="" required>
                 </div>
                 <div class="col text-left">
-                    <label for="email">Email</label>
+                    <label for="email">Email*</label>
                     <input type="email" name="" id="" required>
                     <label for="budget">Project/Budget</label>
                     <input type="text" name="" id="">
                 </div>
                 <div class="col-12 text-left">
-                    <label for="comments">Comments/suggestions</label>
+                    <label for="comments">Comments/suggestions*</label>
                     <textarea name="comments" id="" cols="90" rows="10"></textarea>
                     <div class="text-center">
                         <button>Submit</button>

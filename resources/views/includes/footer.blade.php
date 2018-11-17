@@ -20,10 +20,10 @@
         <div class="row">
             <div class="col-12 col-md-12 icons text-center">
 
+                <img src="images/icon_white.png" alt="">
                 <h5 class="top">Have a project you want to collaborate on?</h5>
                 <h5 class="copy">Don't hesistate to get in touch</h5>
-                <img src="images/icon_white.png" alt="">
-
+                
                 <ul>
                     <li>
                         <a href="https://github.com/Jamiemufu" target="_blank">
@@ -58,7 +58,7 @@
                     </li>
                 </ul>
 
-                <h2 class="copy--bottom">Made by Jamie Evans &copy; 2018 JEDesigns.xyz</h2>
+                <h2 class="copy--bottom">Created by Jamie Evans &copy; 2018 JEDesigns.xyz</h2>
             </div>
         </div>
     </div>
