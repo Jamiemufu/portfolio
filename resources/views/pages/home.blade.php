@@ -11,10 +11,10 @@
 
                 <div class="top">
                     <h1>JE Design & Development</h1>
-                    <h5>I do what I love! That just so happens to be web development</h5>
+                    <h5>I love what I do, I also love doing it</h5>
                 </div>
 
-                <img class="banner" src="images/banner.jpg" alt="">
+                <img class="banner" src="images/banner.jpg" alt="Banner">
 
             </div>
         </div>
@@ -46,7 +46,7 @@
                         <h3>Develop</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis cupiditate, sit in
                             rerum dolorem enim similique veniam.</p>
-                        <h5>Things I can do!</h5>
+                        <h5>Things I can do</h5>
                         <p>HTML, CSS, Javascript, PHP, Node.js </p>
                         <h5>Tools for the job!</h5>
                         <ul>
@@ -54,8 +54,8 @@
                             <li>LESS/SASS</li>
                             <li>BitBucket</li>
                             <li>Github</li>
-                            <li>Codepen</li>
-                            <li>Terminal</li>
+                            <li>Bootstrap</li>
+                            <li>Laravel/Symfony</li>
                             <li>Imagination!</li>
                         </ul>
                     </div>
@@ -71,12 +71,12 @@
                         <p>Heroku, git, AWS, GoogleCloud, GoDaddy</p>
                         <h5>Anything else?</h5>
                         <ul>
-                            <li>Install Ubuntu?</li>
-                            <li>Set up MYSQL?</li>
-                            <li>Setup PHP?</li>
-                            <li>Deploy via Git/SSH?</li>
-                            <li>Dev site for progress checks?</li>
-                            <li>Deploy to production?</li>
+                            <li>Install Ubuntu</li>
+                            <li>Set up MYSQL</li>
+                            <li>Setup PHP</li>
+                            <li>Deploy via Git/SSH</li>
+                            <li>Dev site for progress checks</li>
+                            <li>Deploy to production</li>
                         </ul>
                     </div>
                 </div>
@@ -87,13 +87,12 @@
                         <h3>Enjoy</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis cupiditate, sit in
                             rerum dolorem enim similique veniam.</p>
-                        <h5>Sit back and relax!</h5>
+                        <h5>Sit back and relax</h5>
                         <p>Everything will get taken care of</p>
                         <h5>Maintenance you say?</h5>
                         <ul>
-                            <li>Updates to exsisting sites</li>
-                            <li>Amends to current sites</li>
-                            <li>Amends to exsisting sites</li>
+                            <li>Updates</li>
+                            <li>Amends</li>
                             <li>Re-factoring code</li>
                             <li>Re-Designs</li>
                             <li>Anything I can do to help</li>
@@ -138,8 +137,8 @@
                                 <i class="fab fa-js-square"></i>
                                 <i class="fab fa-php"></i>
                             </p>
-                            <button>Visit Site</button>
-                            <img src="images/icon_white.png" alt="">
+                            <a href="https://grosvenorcasinoevents.co.uk/" target="_blank"><button>Visit Site</button></a>
+                            <img src="images/icon_white.png" alt="JE Design">
                         </div>
                     </div>
                 </div>
@@ -158,8 +157,8 @@
                                 <i class="fab fa-js-square"></i>
                                 <i class="fab fa-php"></i>
                             </p>
-                            <button>Visit Site</button>
-                            <img src="images/icon_white.png" alt="">
+                            <a href="https://winwwprizes.co.uk/" target="_blank"><button>Visit Site</button></a>
+                            <img src="images/icon_white.png" alt="JE Design">
                         </div>
                     </div>
                 </div>
@@ -178,8 +177,8 @@
                                 <i class="fab fa-js-square"></i>
                                 <i class="fab fa-php"></i>
                             </p>
-                            <button>Visit Site</button>
-                            <img src="images/icon_white.png" alt="">
+                            <a href="http://itgproduction.com/clients/regus/landing_pages/regus_eco_landing_page/index.html" target="_blank"><button>Visit Site</button></a>
+                            <img src="images/icon_white.png" alt="JE Design">
                         </div>
                     </div>
                 </div>
@@ -198,8 +197,8 @@
                                 <i class="fab fa-js-square"></i>
                                 <i class="fab fa-php"></i>
                             </p>
-                            <button>Visit Site</button>
-                            <img src="images/icon_white.png" alt="">
+                            <a href="https://namcofunscape.com/" target="_blank"><button>Visit Site</button></a>
+                            <img src="images/icon_white.png" alt="JE Design">
                         </div>
                     </div>
                 </div>
@@ -218,8 +217,8 @@
                                 <i class="fab fa-js-square"></i>
                                 <i class="fab fa-php"></i>
                             </p>
-                            <button>Visit Site</button>
-                            <img src="images/icon_white.png" alt="">
+                            <a href="https://dev.meccabingoevents.co.uk/" target="_blank"><button>Visit Site</button></a>
+                            <img src="images/icon_white.png" alt="JE Design">
                         </div>
                     </div>
                 </div>
@@ -238,15 +237,17 @@
                                 <i class="fab fa-js-square"></i>
                                 <i class="fab fa-php"></i>
                             </p>
-                            <button>Visit Site</button>
-                            <img src="images/icon_white.png" alt="">
+                            <a href="https://dev.bunzladvantage.com/" target="_blank"><button>Visit Site</button></a>
+                            <img src="images/icon_white.png" alt="JE Design">
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-12 more">
+                <a href="https://codepen.io/jamiemufu/" target="_blank">
                 <button><span>See more</span><i class="fab fa-codepen" aria-hidden="true"></i></button>
+                </a>
             </div>
             <!-- end examples -->
         </div>
@@ -254,8 +255,6 @@
     </div>
 </section>
 <!--end examples section-->
-
-<!-- TODO - ADD TESTIMONIALS - ADD PROPER LEADING CONTACT BLOCK OR FORM -->
 
 <!-- contact section -->
 <section>
@@ -282,24 +281,38 @@
 <!--end contact section-->
 <!--FORM-->
 <section>
-    <div class="container contact-form text-center">
+    <div class="container contact-form text-center" id="form_title">
         <div class="title">
             <h1>If you need a chat, fill out the form. Coffee is on me</h1>
             <h5>I would love to hear about furture work or projects</h5>
         </div>
         <form action="">
-            <div class="row">
-                <div class="col-12 col-md-6 text-center">
-                    <input type="text" name="" id="" placeholder="Name">
-                    <input type="text" name="" id="" placeholder="Location">
+            <div class="row text-center">
+                <div class="col-12 col-md-6 text-left">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="" required>
+                    <label for="location">Location</label>
+                    <input type="text" name="location" id="" required>
                 </div>
+                <div class="col text-left">
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="" required>
+                    <label for="budget">Project/Budget</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="col-12 text-left">
+                    <label for="comments">Comments/suggestions</label>
+                    <textarea name="comments" id="" cols="90" rows="10"></textarea>
+                    <div class="text-center">
+                        <button>Submit</button>
+                    </div>
+                </div>
+                {{-- title for footer here because of map overlaying divs --}}
                 <div class="col">
-                        <input type="text" name="" id="" placeholder="Email">
-                        <input type="text" name="" id="" placeholder="Budget">
-                </div>
-                <div class="col-12">
-                    <textarea name="" id="" cols="90" rows="10" placeholder=""></textarea>
-                    <button>Submit</button>
+                    <div class="title">
+                        <h1>Local businesses</h1>
+                        <h5>Get in touch, I would love to help. I believe communities should stick together</h5>
+                    </div>
                 </div>
             </div>
         </form>

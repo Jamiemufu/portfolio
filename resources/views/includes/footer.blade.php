@@ -4,7 +4,6 @@
         <div class="container map">
             <div class="row">
                 <div class="col-12 text-center">
-        
                     <div id="map">
 
                     </div>
@@ -26,12 +25,37 @@
                 <img src="images/icon_white.png" alt="">
 
                 <ul>
-                    <li><span><i class="fab fa-github"></i></span></li>
-                    <li><span><i class="fab fa-linkedin-in"></i></span></li>
-                    <li><span><i class="fab fa-codepen"></i></span></li>
-                    <li><span><i class="fas fa-envelope"></i></span></li>
-                    <li><span><i class="fas fa-phone"></i></span></li>
-                    <li><span><i class="fab fa-twitter"></i></span></li>
+                    <li>
+                        <a href="https://github.com/Jamiemufu" target="_blank">
+                            <span><i class="fab fa-github"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jamie-evans-2aba1515a/" target="_blank">
+                            <span><i class="fab fa-linkedin-in"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://codepen.io/jamiemufu/" target="_blank">
+                            <span><i class="fab fa-codepen"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <!--CHANGE ASAP -->
+                        <a href="mailto:jedesign.dev@gmail.com">
+                            <span><i class="fas fa-envelope"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:07969269851">
+                            <span><i class="fas fa-phone"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitch.tv/jamiemufu" target="_blank">
+                            <span><i class="fab fa-twitch"></i></span>
+                        </a>
+                    </li>
                 </ul>
 
                 <h2 class="copy--bottom">Made by Jamie Evans &copy; 2018 JEDesigns.xyz</h2>

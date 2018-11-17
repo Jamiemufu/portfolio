@@ -315,6 +315,8 @@ h5 {
     margin: auto;
     background-color: purple;
     .title {
+        margin-top: 25px;
+        padding-top: 80px;
         padding-bottom: 50px;
         margin: 0;
         h5 {
@@ -370,7 +372,7 @@ h5 {
 }
 
 .contact-form {
-    padding: 50px 0;
+    padding-top: 60px;
     .title {
         width: 100%;
         padding: 0 25px;
@@ -389,32 +391,46 @@ form {
     margin: auto;
     font-size: 16px;
     font-family: $para;
-   
+    color: purple;
+    label {
+        text-align: left;
+        padding-left: 2px;
+        padding-top: 25px;
+        color: purple;
+    }
     input {
         border: 0.5px solid purple;
         margin: auto;
-        padding: 10px;
         display: block;
         width:100%;
-        margin-top: 25px;
+        padding: 10px;
+        color: grey;
     }
     textarea {
+        color: purple;
         border: 0.5px solid purple;
-        margin-top: 25px;
         width: 100%;
+        padding: 10px;
     }
     button {
         color: white;
         background: purple;
         margin-top: 25px;
+        text-align: center;
     }
     button:hover {
         background: white;
         color: purple;
+    }
+    .title {
+       margin-top: 60px;
     }
 }
 @media (max-width: 750px) {
     form{
         width: 90%;
     } 
+    h5 {
+        padding-bottom: 15px;
+    }
 }
