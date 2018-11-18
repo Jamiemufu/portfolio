@@ -51,7 +51,7 @@ class formController extends Controller
 
         Mail::send('emails.contact', $data, function ($message) {
             $message->from('jamie@jedesign.xyz', 'Jamie Evans');
-            $message->to('jamie@jdesign.xyz', 'Jamie Evans');
+            $message->to('jamie@jedesign.xyz', 'Jamie Evans');
             $message->subject('Contact');
             $message->priority(3);
         });
