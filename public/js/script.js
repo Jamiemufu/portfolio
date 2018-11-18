@@ -84,18 +84,17 @@ $.ajaxSetup({
 
 $(document).ready(function () {
     $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 4000,
         arrows: false,
         speed: 1000,
         fade: true,
+        draggable: false,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        swipe: false,
+        touchMove: false,
         cssEase: 'linear'
-    });
-
-    $('.left').click(function () {
-        $('.slider').slick('slickPrev');
-    });
-
-    $('.right').click(function () {
-        $('.slider').slick('slickNext');
     });
 });
 

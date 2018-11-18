@@ -282,7 +282,7 @@ h5 {
 
         h3 {
             color: white;
-            font-size: 1.2rem;
+            font-size: 1.8rem;
         }
 
         p {
@@ -292,7 +292,7 @@ h5 {
         }
 
         i {
-            font-size: 20px;
+            font-size: 25px;
             padding: 5px 5px;
         }
 
@@ -315,6 +315,11 @@ h5 {
             margin-top: 20px;
             width: 40px;
             display: block;
+        }
+        @media (max-width: 500px) {
+            h3 {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -488,7 +493,8 @@ h5 {
 }
 
 form {
-    width: 60%;
+    width: 100%;
+    max-width: 700px;
     padding-top: 50px;
     margin: auto;
     font-size: 16px;

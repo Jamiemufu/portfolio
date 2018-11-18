@@ -137,7 +137,6 @@
                                 <i class="fab fa-php"></i>
                             </p>
                             <a href="https://grosvenorcasinoevents.co.uk/" target="_blank"><button>Visit Site</button></a>
-                            <img src="images/icon_white.png" alt="JE Design">
                         </div>
                     </div>
                 </div>
@@ -157,7 +156,6 @@
                                 <i class="fab fa-php"></i>
                             </p>
                             <a href="https://winwwprizes.co.uk/" target="_blank"><button>Visit Site</button></a>
-                            <img src="images/icon_white.png" alt="JE Design">
                         </div>
                     </div>
                 </div>
@@ -178,7 +176,6 @@
                             </p>
                             <a href="http://itgproduction.com/clients/regus/landing_pages/regus_eco_landing_page/index.html"
                                 target="_blank"><button>Visit Site</button></a>
-                            <img src="images/icon_white.png" alt="JE Design">
                         </div>
                     </div>
                 </div>
@@ -198,7 +195,6 @@
                                 <i class="fab fa-php"></i>
                             </p>
                             <a href="https://namcofunscape.com/" target="_blank"><button>Visit Site</button></a>
-                            <img src="images/icon_white.png" alt="JE Design">
                         </div>
                     </div>
                 </div>
@@ -218,7 +214,6 @@
                                 <i class="fab fa-php"></i>
                             </p>
                             <a href="https://dev.meccabingoevents.co.uk/" target="_blank"><button>Visit Site</button></a>
-                            <img src="images/icon_white.png" alt="JE Design">
                         </div>
                     </div>
                 </div>
@@ -238,7 +233,6 @@
                                 <i class="fab fa-php"></i>
                             </p>
                             <a href="https://dev.bunzladvantage.com/" target="_blank"><button>Visit Site</button></a>
-                            <img src="images/icon_white.png" alt="JE Design">
                         </div>
                     </div>
                 </div>
@@ -263,10 +257,6 @@
             <div class="row">
                 <div class="col-12 sl">
 
-                    {{-- slider arrow left --}}
-                    <div class="arrow arrow-left left">
-                        <i class="fas fa-angle-double-left"></i>
-                    </div>
 
                     <div class="title">
                         <h1>Testimonials</h1>
@@ -321,11 +311,6 @@
                         {{-- end slider --}}
                     </div>
 
-                    {{-- slider arrow right --}}
-                    <div class="arrow arrow-right right">
-                        <i class="fas fa-angle-double-right"></i>
-                    </div>
-
                 </div>
                 {{-- end col --}}
             </div>
@@ -371,15 +356,6 @@
                         <button type="submit">Submit</button>
                     </div>
                 </div>
-
-                {{-- title for footer here because of map overlaying divs --}}
-                <div class="col">
-                    <div class="title">
-                        <h1>Local businesses</h1>
-                        <h5>Get in touch, I would love to help. I believe communities should stick together</h5>
-                    </div>
-                </div>
-                {{-- end title --}}
 
             </div>
         </form>

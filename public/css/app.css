@@ -10754,7 +10754,7 @@ h5 {
 
 .examples .overlay h3 {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 .examples .overlay p {
@@ -10764,7 +10764,7 @@ h5 {
 }
 
 .examples .overlay i {
-  font-size: 20px;
+  font-size: 25px;
   padding: 5px 5px;
 }
 
@@ -10786,6 +10786,12 @@ h5 {
   margin-top: 20px;
   width: 40px;
   display: block;
+}
+
+@media (max-width: 500px) {
+  .examples .overlay h3 {
+    font-size: 1.4rem;
+  }
 }
 
 .examples .middle {
@@ -10958,7 +10964,8 @@ h5 {
 }
 
 form {
-  width: 60%;
+  width: 100%;
+  max-width: 700px;
   padding-top: 50px;
   margin: auto;
   font-size: 16px;
@@ -11105,6 +11112,7 @@ footer .copy--bottom {
 footer .map-container {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, purple), color-stop(50%, white));
   background-image: linear-gradient(bottom, purple 50%, white 50%);
+  margin-top: 60px;
 }
 
 footer .map-container .map {

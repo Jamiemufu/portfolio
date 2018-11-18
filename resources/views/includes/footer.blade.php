@@ -42,8 +42,13 @@
                     </li>
                     <li>
                         <!--CHANGE ASAP -->
-                        <a href="mailto:jedesign.dev@gmail.com">
+                        <a href="mailto:jamie@jedesign.xyz">
                             <span><i class="fas fa-envelope"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="skype:jamie@jedesign.xyz?call">
+                            <span><i class="fab fa-skype"></i></span>
                         </a>
                     </li>
                     <li>
@@ -56,6 +61,7 @@
                             <span><i class="fab fa-twitch"></i></span>
                         </a>
                     </li>
+                   
                 </ul>
 
                 <h2 class="copy--bottom">Created by Jamie Evans &copy; 2018 JEDesigns.xyz</h2>
