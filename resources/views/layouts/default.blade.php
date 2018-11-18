@@ -15,11 +15,6 @@
     <!-- Slick-->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
-    {{-- load css for todo --}}
-    @if ($_SERVER['REQUEST_URI'] === '/todo') 
-        <link rel="stylesheet" href="{{ mix('/css/style.css') }}">
-    @endif
-
 </head>
 
 <body>
@@ -33,11 +28,6 @@
     <footer>
         @include('includes.footer')
     </footer>
-
-    {{-- IF TODO --}}
-    @if ($_SERVER['REQUEST_URI'] === '/todo') 
-        <script src="{{ mix('/js/todo.js') }}"></script>
-    @endif
 
     {{-- JS Scripts app.js includes bootstrap--}}
     <script src="{{ mix('/js/app.js') }}"></script>

@@ -14,6 +14,4 @@ Route::get('/', 'formController@show');
 Route::post('/', 'formController@store');
 
 
-Route::resource('todo', 'itemsController');
-
 
