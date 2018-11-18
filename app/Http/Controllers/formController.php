@@ -38,8 +38,7 @@ class formController extends Controller
             'comments' => 'nullable'
         ]);
         
-        $data = array($request->input('name'));
-
+        //save to database
         $contact->name=$request->input('name');
         $contact->email=$request->input('email');
         $contact->location=$request->input('location');
@@ -47,16 +46,18 @@ class formController extends Controller
         $contact->comments=$request->input('comments', false);
         $contact->save();
         
-        $name = $request->input('name');
+        $input = $request->all();
 
-        Mail::send('emails.contact', $data, function ($message) {
+        //send basic email saying received mail
+        Mail::send('emails.contact', $input, function ($message) {
             $message->from('jamie@jedesign.xyz', 'Jamie Evans');
             $message->to('jamie@jedesign.xyz', 'Jamie Evans');
-            $message->subject('Contact');
+            $message->subject('Contact from portfolio website');
             $message->priority(3);
         });
 
-        return view('pages.thanks', ['name' => $name]);
+        //return thanks page with name
+        return view('pages.thanks', $input);
 
     }
 

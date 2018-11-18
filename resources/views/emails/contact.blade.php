@@ -10,7 +10,12 @@
    <table>
        <tr>
            <td>
-               You have received mail
+              Jamie,<br/>
+              You have a received an email from <br/>
+              {{ $name }} <br/>
+              {{ $email }} <br/>
+              From {{ $location }} with a budget of {{ $budget }}. <br/>
+              Comments : {{ $comments }}
            </td>
        </tr>
        <tr>
