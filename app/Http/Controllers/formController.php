@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Mail\ContactEmail;
+use Illuminate\Support\Facades\Mail;
 
 class formController extends Controller
 {   
@@ -35,6 +37,8 @@ class formController extends Controller
             'location' => 'required',
             'comments' => 'nullable'
         ]);
+        
+        $data = array($request->input('name'));
 
         $contact->name=$request->input('name');
         $contact->email=$request->input('email');
@@ -44,6 +48,13 @@ class formController extends Controller
         $contact->save();
         
         $name = $request->input('name');
+
+        Mail::send('emails.contact', $data, function ($message) {
+            $message->from('jamie@jedesign.xyz', 'Jamie Evans');
+            $message->to('jamie@jdesign.xyz', 'Jamie Evans');
+            $message->subject('Contact');
+            $message->priority(3);
+        });
 
         return view('pages.thanks', ['name' => $name]);
 
