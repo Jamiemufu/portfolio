@@ -10493,6 +10493,11 @@ button:hover {
   background-color: purple;
 }
 
+button:active,
+button:focus {
+  outline: none;
+}
+
 h1 {
   font-size: 3.2rem;
   color: #272727;
@@ -10836,12 +10841,14 @@ h5 {
 }
 
 .test img {
+  margin: auto;
   width: 150px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  height: 150px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
 }
 
 .test .quote {
@@ -10887,6 +10894,52 @@ h5 {
   padding-bottom: 60px;
 }
 
+.slider {
+  margin: auto;
+  width: 100%;
+}
+
+.slick-slide {
+  outline: none !important;
+}
+
+.sl {
+  position: relative;
+}
+
+.arrow {
+  opacity: 0.9;
+  z-index: 10;
+}
+
+.arrow i {
+  color: white;
+  padding: 5px;
+  font-size: 50px;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 37%;
+  left: 70%;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 37%;
+  right: 70%;
+}
+
+@media (max-width: 500px) {
+  .arrow-right {
+    left: 80%;
+  }
+
+  .arrow-left {
+    right: 80%;
+  }
+}
+
 .contact-form {
   padding-top: 60px;
 }
@@ -10930,11 +10983,21 @@ form input {
   font-size: 18px;
 }
 
+form input:focus,
+form input:active {
+  outline: 2px solid purple;
+}
+
 form textarea {
   color: purple;
   border: 0.5px solid purple;
   width: 100%;
   padding: 10px;
+}
+
+form textarea:focus,
+form textarea:active {
+  outline: 2px solid purple;
 }
 
 form button {
@@ -10961,6 +11024,21 @@ form .title {
   h5 {
     padding-bottom: 15px;
   }
+}
+
+.thanks {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.thanks button {
+  background: purple;
+  color: white;
+}
+
+.thanks button:hover {
+  background: white;
+  color: purple;
 }
 
 header {

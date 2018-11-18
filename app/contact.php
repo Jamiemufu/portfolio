@@ -4,10 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-
-class items extends Model
+class contact extends Model
 {
-   
+    public $timestamps = false;
 }
-
-

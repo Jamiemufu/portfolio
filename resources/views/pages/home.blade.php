@@ -31,9 +31,9 @@
 
                     <div class="title">
                         <h1>I'm Jamie. This is what I love to do!</h1>
-                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio neque accusantium quod esse
-                            eligendi eos architecto delectus quaerat maiores velit ab aliquam sunt, qui ad ullam,
-                            voluptates distinctio totam iste?</h5>
+                        <h5>Completely Self-taught Full Stack Web Developer looking to advance looking to use my skills
+                            to save the world! Maybe not save the world, but definitely solve problems and make awesome
+                            websites and applications</h5>
                     </div>
 
                 </div>
@@ -128,7 +128,7 @@
                     <img class="bg" src="images/rank.jpg" alt="rank">
                     <div class="overlay">
                         <div class="middle">
-                            <h3>Grovsenor Casinos</h3>
+                            <h3>Grovesenor Casinos</h3>
                             <p>
                                 <i class="fab fa-html5"></i>
                                 <i class="fab fa-css3-alt"></i>
@@ -176,7 +176,8 @@
                                 <i class="fab fa-js-square"></i>
                                 <i class="fab fa-php"></i>
                             </p>
-                            <a href="http://itgproduction.com/clients/regus/landing_pages/regus_eco_landing_page/index.html" target="_blank"><button>Visit Site</button></a>
+                            <a href="http://itgproduction.com/clients/regus/landing_pages/regus_eco_landing_page/index.html"
+                                target="_blank"><button>Visit Site</button></a>
                             <img src="images/icon_white.png" alt="JE Design">
                         </div>
                     </div>
@@ -245,7 +246,7 @@
 
             <div class="col-12 more">
                 <a href="https://codepen.io/jamiemufu/" target="_blank">
-                <button><span>See more</span><i class="fab fa-codepen" aria-hidden="true"></i></button>
+                    <button><span>See more</span><i class="fab fa-codepen" aria-hidden="true"></i></button>
                 </a>
             </div>
             <!-- end examples -->
@@ -260,52 +261,117 @@
     <div class="container-fluid test">
         <div class="container text-center">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 sl">
+
+                    {{-- slider arrow left --}}
+                    <div class="arrow arrow-left left">
+                        <i class="fas fa-angle-double-left"></i>
+                    </div>
+
                     <div class="title">
                         <h1>Testimonials</h1>
                         <h5>This is what people who work with me say...</h5>
                     </div>
-                    <img src="images/trump.jpg" alt="">
-                    <h5 class="quote">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio praesentium
-                        nihil quos doloribus? Vel at, cupiditate repellendus et eos porro praesentium nemo distinctio
-                        magni iste. Voluptates asperiores recusandae aperiam quis!</h5>
-                    <p class="author">Donald Trump</p>
-                    <p class="company">President USA</p>
+
+                    <div class="slider">
+                        {{-- slide 1 --}}
+                        <div>
+                            <img class="text-center" src="images/trump.jpg" alt="">
+                            <h5 class="quote">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
+                                praesentium
+                                nihil quos doloribus? Vel at, cupiditate repellendus et eos porro praesentium nemo
+                                distinctio
+                                magni iste. Voluptates asperiores recusandae aperiam quis!</h5>
+                            <p class="author">Donald Trump</p>
+                            <p class="company">President USA</p>
+                        </div>
+
+                        {{-- slide 2 --}}
+                        <div>
+                            <img class="text-center" src="images/north.jpg" alt="">
+                            <h5 class="quote">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
+                                praesentium
+                                nihil quos doloribus? Vel at, cupiditate repellendus et eos porro praesentium nemo
+                                distinctio
+                                magni iste. Voluptates asperiores recusandae aperiam quis!</h5>
+                            <p class="author">George North</p>
+                            <p class="company">Wales Rugby</p>
+                        </div>
+
+                        {{-- slide 3 --}}
+                        <div>
+                            <img class="text-center" src="images/halfpenny.jpg" alt="">
+                            <h5 class="quote">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
+                                doloribus, fugiat inventore, adipisci aspernatur modi reprehenderit voluptatibus
+                                eligendi quasi neque ea maiores sunt natus eius. Voluptas laudantium debitis sed vitae.</h5>
+                            <p class="author">Leigh Halfpenny</p>
+                            <p class="company">Wales Rugby</p>
+                        </div>
+
+                        {{-- slider 4 --}}
+                        <div>
+                            <img class="text-center" src="images/me.jpg" alt="">
+                            <h5 class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et
+                                accusamus asperiores quaerat, magnam ipsam id eum doloribus. Asperiores sunt itaque
+                                repellendus eos, in natus? Recusandae delectus sint culpa maiores?</h5>
+                            <p class="author">Jamie Evans</p>
+                            <p class="company">JE Design</p>
+                        </div>
+
+                        {{-- end slider --}}
+                    </div>
+
+                    {{-- slider arrow right --}}
+                    <div class="arrow arrow-right right">
+                        <i class="fas fa-angle-double-right"></i>
+                    </div>
+
                 </div>
+                {{-- end col --}}
             </div>
         </div>
-
     </div>
 </section>
 <!--end contact section-->
 <!--FORM-->
 <section>
     <div class="container contact-form text-center" id="form_title">
+
         <div class="title">
             <h1>If you would like a chat, fill out the form. Coffee is on me</h1>
-            <h5>I would love to hear about furture work or projects</h5>
+            <h5>I would love to hear about future work or projects</h5>
         </div>
-        <form action="">
+
+        <form method="POST" action="{{ action('formController@store') }}">
+            @csrf
+
             <div class="row text-center">
+
+                {{-- first col --}}
                 <div class="col-12 col-md-6 text-left">
-                    <label for="name">Name*</label>
-                    <input type="text" name="name" id="" required>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="" required tabindex="1">
                     <label for="location">Location*</label>
-                    <input type="text" name="location" id="" required>
+                    <input type="text" name="location" id="" required tabindex="3">
                 </div>
+
+                {{-- second col --}}
                 <div class="col text-left">
                     <label for="email">Email*</label>
-                    <input type="email" name="" id="" required>
+                    <input type="email" name="email" id="" required tabindex="2">
                     <label for="budget">Project/Budget</label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="budget" id="" tabindex="4">
                 </div>
+
+                {{-- full bottom col --}}
                 <div class="col-12 text-left">
-                    <label for="comments">Comments/suggestions*</label>
-                    <textarea name="comments" id="" cols="90" rows="10"></textarea>
+                    <label for="comments">Comments/suggestions</label>
+                    <textarea name="comments" id="" cols="90" rows="10" tabindex="5"></textarea>
                     <div class="text-center">
-                        <button>Submit</button>
+                        <button type="submit">Submit</button>
                     </div>
                 </div>
+
                 {{-- title for footer here because of map overlaying divs --}}
                 <div class="col">
                     <div class="title">
@@ -313,9 +379,12 @@
                         <h5>Get in touch, I would love to help. I believe communities should stick together</h5>
                     </div>
                 </div>
+                {{-- end title --}}
+
             </div>
         </form>
     </div>
 </section>
+{{-- end form section --}}
 
 @endsection
