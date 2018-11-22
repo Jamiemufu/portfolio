@@ -10,8 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+//home
 Route::get('/', 'formController@show');
 Route::post('/', 'formController@store');
 
-
-
+//testimonials
+Route::get('/testimonials', function () {
+    return view('pages.testimonials');
+});
+Route::post('/testimonials', 'Controller@store');

@@ -316,6 +316,7 @@ h5 {
             width: 40px;
             display: block;
         }
+
         @media (max-width: 500px) {
             h3 {
                 font-size: 1.4rem;
@@ -374,7 +375,7 @@ h5 {
         }
     }
 
-    img  {
+    img {
         margin: auto;
         width: 150px;
         height: 150px;
@@ -383,7 +384,7 @@ h5 {
         -moz-border-radius: 100%;
         -ms-border-radius: 100%;
         -o-border-radius: 100%;
-}
+    }
 
     .quote {
         margin: auto;
@@ -445,6 +446,7 @@ h5 {
 .arrow {
     opacity: 0.9;
     z-index: 10;
+
     i {
         color: white;
         padding: 5px;
@@ -465,15 +467,17 @@ h5 {
     top: 37%;
     right: 70%;
 }
+
 @media (max-width: 500px) {
     .arrow-right {
         left: 80%;
     }
-    
+
     .arrow-left {
         right: 80%;
     }
 }
+
 .contact-form {
     padding-top: 60px;
 

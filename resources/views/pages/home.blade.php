@@ -264,49 +264,18 @@
                     </div>
 
                     <div class="slider">
-                        {{-- slide 1 --}}
+
+                        @foreach ($data as $value)
+                        
                         <div>
-                            <img class="text-center" src="images/trump.jpg" alt="">
-                            <h5 class="quote">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
-                                praesentium
-                                nihil quos doloribus? Vel at, cupiditate repellendus et eos porro praesentium nemo
-                                distinctio
-                                magni iste. Voluptates asperiores recusandae aperiam quis!</h5>
-                            <p class="author">Donald Trump</p>
-                            <p class="company">President USA</p>
+                            <img class="text-center" src="{{ asset($value->filename) }}" alt="">
+                            <h5 class="quote">{{ $value->comment}}</h5>
+                            <p class="author">{{ $value->author }}</p>
+                            <p class="company">{{ $value->company }}</p>
                         </div>
 
-                        {{-- slide 2 --}}
-                        <div>
-                            <img class="text-center" src="images/north.jpg" alt="">
-                            <h5 class="quote">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
-                                praesentium
-                                nihil quos doloribus? Vel at, cupiditate repellendus et eos porro praesentium nemo
-                                distinctio
-                                magni iste. Voluptates asperiores recusandae aperiam quis!</h5>
-                            <p class="author">George North</p>
-                            <p class="company">Wales Rugby</p>
-                        </div>
-
-                        {{-- slide 3 --}}
-                        <div>
-                            <img class="text-center" src="images/halfpenny.jpg" alt="">
-                            <h5 class="quote">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
-                                doloribus, fugiat inventore, adipisci aspernatur modi reprehenderit voluptatibus
-                                eligendi quasi neque ea maiores sunt natus eius. Voluptas laudantium debitis sed vitae.</h5>
-                            <p class="author">Leigh Halfpenny</p>
-                            <p class="company">Wales Rugby</p>
-                        </div>
-
-                        {{-- slider 4 --}}
-                        <div>
-                            <img class="text-center" src="images/me.jpg" alt="">
-                            <h5 class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et
-                                accusamus asperiores quaerat, magnam ipsam id eum doloribus. Asperiores sunt itaque
-                                repellendus eos, in natus? Recusandae delectus sint culpa maiores?</h5>
-                            <p class="author">Jamie Evans</p>
-                            <p class="company">JE Design</p>
-                        </div>
+                        @endforeach
+                     
 
                         {{-- end slider --}}
                     </div>
