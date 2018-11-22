@@ -11189,11 +11189,18 @@ footer span:hover i {
 }
 
 .testimonials form label {
-  width: 49.6%;
+  width: 49%;
 }
 
 .testimonials button {
   display: inline-block;
   margin-top: 35px;
+}
+
+@media (max-width: 750px) {
+  .testimonials form label {
+    display: block;
+    width: 100%;
+  }
 }
 

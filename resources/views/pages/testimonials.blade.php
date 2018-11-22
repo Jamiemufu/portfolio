@@ -6,7 +6,7 @@
 <section>
         <div class="container testimonials">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-12">
     
                     <div class="top">
                         <h1 id="h1">
