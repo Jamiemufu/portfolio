@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use \App\Testimonials;
+use \App\testimonials;
 
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Bus\DispatchesJobs;

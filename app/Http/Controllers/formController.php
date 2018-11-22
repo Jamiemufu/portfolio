@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use \App\Testimonials;
+use \App\testimonials;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -15,7 +15,7 @@ class formController extends Controller
     */
     public function show() 
     {
-        $data = Testimonials::all();
+        $data = testimonials::all();
         return view('pages.home', compact('data'));
 
     }

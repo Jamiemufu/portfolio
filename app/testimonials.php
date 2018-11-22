@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Testimonials extends Model
+class testimonials extends Model
 {
     public $timestamps = false;
 }
