@@ -303,7 +303,7 @@
 
                 {{-- first col --}}
                 <div class="col-12 col-md-6 text-left">
-                    <label for="name">Name</label>
+                    <label for="name">Name*</label>
                     <input type="text" name="name" id="" required tabindex="1">
                     <label for="location">Location*</label>
                     <input type="text" name="location" id="" required tabindex="3">
