@@ -11204,3 +11204,17 @@ footer span:hover i {
   }
 }
 
+.resume {
+  padding-top: 15px;
+}
+
+.resume button {
+  background: purple;
+  color: white;
+}
+
+.resume button:hover {
+  background: white;
+  color: purple;
+}
+

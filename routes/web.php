@@ -20,3 +20,8 @@ Route::get('/testimonials', function () {
     return view('pages.testimonials');
 });
 Route::post('/testimonials', 'Controller@store');
+
+//resume
+Route::any('/resume', function () {
+    return view('pages.resume');
+});

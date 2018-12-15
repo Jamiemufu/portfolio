@@ -6,7 +6,6 @@
             <div>
                 <img src="images/icon_purple.png" alt="JE Design">
             </div>
-
         </div>
     </div>
 </div>
