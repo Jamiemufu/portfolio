@@ -14,12 +14,13 @@
 <section>
     <div class="container testimonial--view">
         <form action="" method="POST" enctype="multipart/form-data">
+            @method('PUT')            
             @csrf
             <div class="row">   
             
                 {{-- view all testimonials from the database --}}
                 @foreach ($testimonials as $item)   
-                    {{-- @if ($item->approved === 'pending') --}}
+                    @if ($item->approved === 'pending')
 
                     <div class="col-12">
                         <div class="testimonial--list">  
@@ -32,17 +33,17 @@
                             <p><span>Comment: </span> {{$item->comment}}</p>
                             <p><span>Company: </span> {{$item->company}}</p>
                             <p><span>Approved: </span> {{$item->approved}}</p>
-                            <input type="hidden" name="id" value="{{$item->id}}">
                             <p>&nbsp;</p>
                             {{-- buttons --}}
                             <p> 
                                 <img src="{{asset($item->filename)}}" alt="" width="100" class="show-mobile">
-                                <button name="approve" id="approve">
+                                
+                                <button value="approve" name="approve" id="approve" formaction="{{action('TestController@update', [$item->id])}}">
                                     <i class="fas fa-check approve"></i>
                                     <span class="approve"> Approve </span>
-                                </button>
-                               
-                                <button name="remove" id="remove">
+                                </button>                              
+                                
+                                <button value="remove" name="remove" id="remove" formaction="{{action('TestController@update', [$item->id])}}">
                                     <i class="fas fa-times remove"></i>
                                     <span class="remove"> Remove </span>
                                 </button>
@@ -52,7 +53,7 @@
                         </div>
                     </div>
 
-                    {{-- @endif --}}
+                    @endif
                 @endforeach
 
             </div>

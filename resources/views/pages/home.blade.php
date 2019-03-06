@@ -266,14 +266,14 @@
                     <div class="slider">
 
                         @foreach ($data as $value)
-                        
+                        @if ($value->approved === 'Approved')
                         <div>
                             <img class="text-center" src="{{ asset($value->filename) }}" alt="">
                             <h5 class="quote">{{ $value->comment}}</h5>
                             <p class="author">{{ $value->author }}</p>
                             <p class="company">{{ $value->company }}</p>
                         </div>
-
+                        @endif
                         @endforeach
                      
 
