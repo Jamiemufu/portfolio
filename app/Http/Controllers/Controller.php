@@ -10,6 +10,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\DB;
 
 class Controller extends BaseController
 {
@@ -44,11 +45,45 @@ class Controller extends BaseController
         $test->author=$request->input('author');
         $test->company=$request->input('company');
         $test->comment=$request->input('comment');
+        $test->approved='pending';
 
         //save to database
         $test->save();
 
         return redirect('/');
     }
+
+    /** 
+     * list
+     *
+     * @param  Request $request
+     *
+     * @return Response
+     */
+    public function list(Request $request)
+    {
+
+        $testimonials = DB::select('select * from testimonials');
+
+        return view('auth.view', ['testimonials' => $testimonials]);
+
+    }
+
+    /**
+     * updateTestimonials
+     *
+     * @param  Request $request
+     *
+     * @return Response
+     */
+    public function update(Request $request) 
+    {   
+
+        DB::table('testimonials')->update(array('approved' => 'yes'));
+
+        return redirect()->action('Controller@list');
+
+    }
+
 }
 

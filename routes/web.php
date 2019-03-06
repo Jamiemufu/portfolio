@@ -25,3 +25,6 @@ Route::post('/testimonials', 'Controller@store');
 Route::any('/resume', function () {
     return view('pages.resume');
 });
+
+Route::get('/admin/view', 'Controller@list');
+Route::post('/admin/view', 'Controller@update');

@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-12 col-md-12 icons text-center">
 
-                <img src="images/icon_white.png" alt="">
+                <img src="{{asset('images/icon_white.png')}}" alt="">
                 <h5 class="top">Have a project you want to collaborate on?</h5>
                 <h5 class="copy">Don't hesistate to get in touch</h5>
                 

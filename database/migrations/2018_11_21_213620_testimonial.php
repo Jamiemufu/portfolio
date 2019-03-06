@@ -19,6 +19,7 @@ class Testimonial extends Migration
             $table->string('company');
             $table->string('filename')->nullable();
             $table->text('comment');
+            $table->text('approved');
             $table->timestamps();
         });
     }
