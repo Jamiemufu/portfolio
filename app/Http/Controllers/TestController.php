@@ -99,24 +99,25 @@ class TestController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //update testimonial approved
+        
+        $testimonials = \App\testimonials::find($id);
+
+        //if request approved update
         if (request('approve')) 
         {
-            $testimonials = \App\testimonials::find($id);
             $testimonials->approved = "Approved";
             $testimonials->save();
-            return redirect()->action('TestController@index');
-        } 
-        else 
-        {
-            $testimonials = \App\testimonials::find($id);
-            $testimonials->delete();        
-            return redirect()->action('TestController@index');
         }
+        //if request delete
+        else 
+        {            
+            $testimonials->delete(); 
+        }
+
+        return redirect()->action('TestController@index');
        
     }
         
-
     /**
      * Remove the specified resource from storage.
      *
