@@ -60,28 +60,11 @@ class Controller extends BaseController
      *
      * @return Response
      */
-    public function list(Request $request)
+    public function listTests(Request $request)
     {
 
-        $testimonials = DB::select('select * from testimonials');
-
-        return view('auth.view', ['testimonials' => $testimonials]);
-
-    }
-
-    /**
-     * updateTestimonials
-     *
-     * @param  Request $request
-     *
-     * @return Response
-     */ 
-    public function update(Request $request) 
-    {   
-        $id = $request->input('id');
-        DB::table('testimonials') ->where('id', $id) ->update(['approved' => 'approved']);
-
-        return redirect()->action('Controller@list');
+        $testimonials = Testimonials::all();
+        return view('auth.view',compact('testimonials'));
 
     }
 

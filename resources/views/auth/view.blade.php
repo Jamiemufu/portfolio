@@ -13,7 +13,7 @@
 
 <section>
     <div class="container testimonial--view">
-        <form action="{{ action('Controller@update')}}" method="POST" enctype="multipart/form-data">
+        <form action="" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="row">   
             
@@ -36,18 +36,13 @@
                             <p>&nbsp;</p>
                             {{-- buttons --}}
                             <p> 
-                                <button>
-                                    <i class="fas fa-check approve"></i>
-                                    <span class="approve"> Approve </span>
-                                </button>
-                                   
-                                <button>
-                                    <i class="fas fa-times remove"></i>
-                                    <span class="remove"> Remove </span>
-                                </button>
                                 
-                                    
-                                
+                                <i class="fas fa-check approve"></i>
+                                <span class="approve"> Approve </span>
+  
+                                <i class="fas fa-times remove"></i>
+                                <span class="remove"> Remove </span>
+
                             </p>
                         </div>
                     </div>
