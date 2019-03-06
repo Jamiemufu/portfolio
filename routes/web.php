@@ -15,15 +15,13 @@
 Route::get('/', 'formController@show');
 Route::post('/', 'formController@store');
 
-//testimonials
-Route::get('/testimonials', function () {
-    return view('pages.testimonials');
-});
-Route::post('/testimonials', 'Controller@store');
-
 //resume
 Route::any('/resume', function () {
     return view('pages.resume');
 });
 
-Route::get('/admin/view', 'Controller@listTests');
+//testimonials
+//RESOURCE
+Route::resource('test', 'TestController');
+
+

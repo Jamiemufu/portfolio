@@ -17,56 +17,5 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
 
-     /**
-    * Testimonials form post
-    *
-    * @param  Request  $request
-    * @return Response
-    */
-    public function store(Request $request)
-    {
-        //validate user input
-        $request->validate([
-            'author'=>'required|string',
-            'company'=>'required|string',
-            'comment'=>'required|string'
-        ]);
-        
-        //get file and store
-        $file = $request->file('picture');
-        $path = $file->store('public/uploads');
-        //remove public from string for dbase storage
-        $newpath = str_replace("public/","",$path);
-
-        //store data
-        $test = new Testimonials;
-        //append storage for the symlink
-        $test->filename='storage/'.$newpath;
-        $test->author=$request->input('author');
-        $test->company=$request->input('company');
-        $test->comment=$request->input('comment');
-        $test->approved='pending';
-
-        //save to database
-        $test->save();
-
-        return redirect('/');
-    }
-
-    /** 
-     * list
-     *
-     * @param  Request $request
-     *
-     * @return Response
-     */
-    public function listTests(Request $request)
-    {
-
-        $testimonials = Testimonials::all();
-        return view('auth.view',compact('testimonials'));
-
-    }
-
 }
 

@@ -17,7 +17,7 @@
                         <h5>Once again thank you!</h5>
                     </div>
 
-                    <form action="{{ action('Controller@store')}}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ action('TestController@store')}}" method="POST" enctype="multipart/form-data">
                     @csrf
                         <fieldset>
                             <label for="author">Author

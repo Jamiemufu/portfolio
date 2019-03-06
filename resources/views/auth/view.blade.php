@@ -37,12 +37,16 @@
                             {{-- buttons --}}
                             <p> 
                                 <img src="{{asset($item->filename)}}" alt="" width="100" class="show-mobile">
-                                <i class="fas fa-check approve"></i>
-                                <span class="approve"> Approve </span>
-  
-                                <i class="fas fa-times remove"></i>
-                                <span class="remove"> Remove </span>
-
+                                <button name="approve" id="approve">
+                                    <i class="fas fa-check approve"></i>
+                                    <span class="approve"> Approve </span>
+                                </button>
+                               
+                                <button name="remove" id="remove">
+                                    <i class="fas fa-times remove"></i>
+                                    <span class="remove"> Remove </span>
+                                </button>
+                                
                             </p>
                             
                         </div>
