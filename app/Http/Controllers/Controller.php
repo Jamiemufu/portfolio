@@ -75,11 +75,11 @@ class Controller extends BaseController
      * @param  Request $request
      *
      * @return Response
-     */
+     */ 
     public function update(Request $request) 
     {   
-
-        DB::table('testimonials')->update(array('approved' => 'yes'));
+        $id = $request->input('id');
+        DB::table('testimonials') ->where('id', $id) ->update(['approved' => 'approved']);
 
         return redirect()->action('Controller@list');
 

@@ -32,6 +32,7 @@
                             <p><span>Comment: </span> {{$item->comment}}</p>
                             <p><span>Company: </span> {{$item->company}}</p>
                             <p><span>Approved: </span> {{$item->approved}}</p>
+                            <input type="hidden" name="id" value="{{$item->id}}">
                             <p>&nbsp;</p>
                             {{-- buttons --}}
                             <p> 
