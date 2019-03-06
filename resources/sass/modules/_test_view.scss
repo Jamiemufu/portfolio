@@ -16,6 +16,9 @@
         padding-left: 5px;
     }
 
+    .show-mobile {
+        display: none;;
+    }
     .testimonial--list {
         padding: 20px;
         margin: auto;
@@ -44,6 +47,29 @@
 
         a:hover {
             text-decoration: none;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonial--view {
+        margin: 0 auto;
+        width: 100%;
+
+        .testimonial--list {
+            padding: 20px;
+            margin: auto;
+            max-width: 100%;
+        }
+        .hide-mobile {
+            display: none;
+        }
+        .show-mobile {
+            display: block;
+        }
+        img {
+            display: block;
+            float: none;
         }
     }
 }

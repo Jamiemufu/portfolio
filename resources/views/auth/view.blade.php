@@ -26,7 +26,7 @@
                             <p>
                                 <span>Name: </span> {{$item->author}}
                                 {{-- float image right inside this p--}}
-                                <img src="{{asset($item->filename)}}" alt="" width="100">
+                                <img src="{{asset($item->filename)}}" alt="" width="100" class="hide-mobile">
                             </p>
                         
                             <p><span>Comment: </span> {{$item->comment}}</p>
@@ -36,7 +36,7 @@
                             <p>&nbsp;</p>
                             {{-- buttons --}}
                             <p> 
-                                
+                                <img src="{{asset($item->filename)}}" alt="" width="100" class="show-mobile">
                                 <i class="fas fa-check approve"></i>
                                 <span class="approve"> Approve </span>
   
@@ -44,6 +44,7 @@
                                 <span class="remove"> Remove </span>
 
                             </p>
+                            
                         </div>
                     </div>
 

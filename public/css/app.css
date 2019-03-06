@@ -11242,6 +11242,10 @@ footer span:hover i {
   padding-left: 5px;
 }
 
+.testimonial--view .show-mobile {
+  display: none;
+}
+
 .testimonial--view .testimonial--list {
   padding: 20px;
   margin: auto;
@@ -11272,5 +11276,31 @@ footer span:hover i {
 
 .testimonial--view .testimonial--list a:hover {
   text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .testimonial--view {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .testimonial--view .testimonial--list {
+    padding: 20px;
+    margin: auto;
+    max-width: 100%;
+  }
+
+  .testimonial--view .hide-mobile {
+    display: none;
+  }
+
+  .testimonial--view .show-mobile {
+    display: block;
+  }
+
+  .testimonial--view img {
+    display: block;
+    float: none;
+  }
 }
 
