@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use \App\testimonials;
 use Illuminate\Http\Request;
+use \App\testimonials;
 
-class TestController extends Controller
+class TestimonialController extends Controller
 {
 
     /**
@@ -15,9 +15,24 @@ class TestController extends Controller
      */
     public function index()
     {
-        //show testimonials
+
         $testimonials = Testimonials::all();
-        return view('auth.view',compact('testimonials'));
+
+        //logic to display message depending on approvals
+        $count = 0;
+        foreach ($testimonials as $key => $item) {
+            if ($item->approved === 'Pending') {
+                $count = $count + 1;
+            }
+        }
+        if ($count > 0) {
+            $message = "Please approve or remove pending testimonials";
+        } else {
+            $message = "There are currently no testimonials pending approval";
+        }
+
+        //return data to view
+        return view('auth.testimonials', compact('testimonials'))->with('message', $message);
     }
 
     /**
@@ -27,8 +42,8 @@ class TestController extends Controller
      */
     public function create()
     {
-        //show testimonial form
-        return view('pages.testimonials');
+        //return create testimonial form
+        return view('pages.createTestimonial');
     }
 
     /**
@@ -41,25 +56,25 @@ class TestController extends Controller
     {
         //validate user input
         $request->validate([
-            'author'=>'required|string',
-            'company'=>'required|string',
-            'comment'=>'required|string'
+            'author' => 'required|string',
+            'company' => 'required|string',
+            'comment' => 'required|string',
         ]);
-        
+
         //get file and store
         $file = $request->file('picture');
         $path = $file->store('public/uploads');
         //remove public from string for dbase storage
-        $newpath = str_replace("public/","",$path);
+        $newpath = str_replace("public/", "", $path);
 
         //store data
         $test = new Testimonials;
         //append storage for the symlink
-        $test->filename='storage/'.$newpath;
-        $test->author=$request->input('author');
-        $test->company=$request->input('company');
-        $test->comment=$request->input('comment');
-        $test->approved='pending';
+        $test->filename = 'storage/' . $newpath;
+        $test->author = $request->input('author');
+        $test->company = $request->input('company');
+        $test->comment = $request->input('comment');
+        $test->approved = 'Pending';
 
         //save to database
         $test->save();
@@ -73,21 +88,10 @@ class TestController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        
-
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
+        $data = testimonials::all();
+        return view('pages.home', compact('data'));
     }
 
     /**
@@ -99,34 +103,21 @@ class TestController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
+
         $testimonials = \App\testimonials::find($id);
 
         //if request approved update
-        if (request('approve')) 
-        {
+        if (request('approve')) {
             $testimonials->approved = "Approved";
             $testimonials->save();
         }
         //if request delete
-        else 
-        {            
-            $testimonials->delete(); 
+        else {
+            $testimonials->delete();
         }
 
-        return redirect()->action('TestController@index');
-       
+        return redirect()->action('TestimonialController@index');
+
     }
-        
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-       
-    }
+
 }

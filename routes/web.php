@@ -12,16 +12,18 @@
 */
 
 //home
-Route::get('/', 'formController@show');
-Route::post('/', 'formController@store');
+//pass testimonials to / view
+Route::get('/', 'TestimonialController@show');
+
+//post to formcontroller store method
+Route::post('/', 'ContactController@store');
 
 //resume
 Route::any('/resume', function () {
     return view('pages.resume');
 });
 
-//testimonials
-//RESOURCE
-Route::resource('test', 'TestController');
+//testimonials resource routes
+Route::resource('testimonials', 'TestimonialController');
 
 

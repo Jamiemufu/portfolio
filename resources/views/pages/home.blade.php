@@ -296,7 +296,7 @@
             <h5>I would love to hear about future work or projects</h5>
         </div>
 
-        <form method="POST" action="{{ action('formController@store') }}">
+        <form method="POST" action="{{ action('ContactController@store') }}">
             @csrf
 
             <div class="row text-center">

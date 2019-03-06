@@ -2,24 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use \App\testimonials;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
-class formController extends Controller
+class contactController extends Controller
 {   
-    /**
-    * Show the form to create a new post.
-    *
-    * @return Response
-    */
-    public function show() 
-    {
-        $data = testimonials::all();
-        return view('pages.home', compact('data'));
-
-    }
-
+   
     /**
     * Store a new blog post.
     *

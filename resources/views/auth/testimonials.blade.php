@@ -5,7 +5,8 @@
     <div class="container">
         <div class="row">
             <div class="col-12 top">
-                <h5>Approve or remove pending testimonials</h5>
+                {{-- message from controller --}}
+                <h5>{{ $message }}</h5>
             </div>
         </div>
     </div>
@@ -20,7 +21,7 @@
             
                 {{-- view all testimonials from the database --}}
                 @foreach ($testimonials as $item)   
-                    @if ($item->approved === 'pending')
+                    @if ($item->approved !== 'Approved')
 
                     <div class="col-12">
                         <div class="testimonial--list">  
@@ -38,12 +39,12 @@
                             <p> 
                                 <img src="{{asset($item->filename)}}" alt="" width="100" class="show-mobile">
                                 
-                                <button value="approve" name="approve" id="approve" formaction="{{action('TestController@update', [$item->id])}}">
+                                <button value="approve" name="approve" id="approve" formaction="{{action('TestimonialController@update', [$item->id])}}">
                                     <i class="fas fa-check approve"></i>
                                     <span class="approve"> Approve </span>
                                 </button>                              
                                 
-                                <button value="remove" name="remove" id="remove" formaction="{{action('TestController@update', [$item->id])}}">
+                                <button value="remove" name="remove" id="remove" formaction="{{action('TestimonialController@update', [$item->id])}}">
                                     <i class="fas fa-times remove"></i>
                                     <span class="remove"> Remove </span>
                                 </button>
