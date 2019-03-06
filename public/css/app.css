@@ -11234,26 +11234,26 @@ footer span:hover i {
 }
 
 @media (max-width: 600px) {
-  .testimonial--view {
+  .testimonial--view .testimonial--view {
     margin: 0 auto;
     width: 100%;
   }
 
-  .testimonial--view .testimonial--list {
+  .testimonial--view .testimonial--view .testimonial--list {
     padding: 20px;
     margin: auto;
     max-width: 100%;
   }
 
-  .testimonial--view .hide-mobile {
+  .testimonial--view .testimonial--view .hide-mobile {
     display: none;
   }
 
-  .testimonial--view .show-mobile {
+  .testimonial--view .testimonial--view .show-mobile {
     display: block;
   }
 
-  .testimonial--view img {
+  .testimonial--view .testimonial--view img {
     display: block;
     float: none;
   }
