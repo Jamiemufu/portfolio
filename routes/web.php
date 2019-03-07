@@ -20,8 +20,9 @@ Route::get('/testimonials/all', 'TestimonialController@all');
 Route::get('/testimonials/approve', 'TestimonialController@index');
 Route::get('/testimonials/create', 'TestimonialController@create');
 //testimonial post requests
-Route::post('/testimonials/approve', 'TestimonialController@update');
 Route::post('/testimonials/create', 'TestimonialController@store');
+//testimonial put request
+Route::put('/testimonials/approve{id}', 'TestimonialController@update');
 //resume
 Route::any('/resume', function () {
     return view('pages.resume');
