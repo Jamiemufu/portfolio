@@ -29,5 +29,11 @@ Route::any('/resume', function () {
 });
 
 
+// TODO
 
+// 1) Auth
+// 2) Editable and database driven projects
+//    ProjectController -> Create/Edit/Delete model and routes -> Storage - > redo frontend
+// 3) Editable sections
+//    SectionControlller -> Create/Edit model and routes -> redo frontend
 
