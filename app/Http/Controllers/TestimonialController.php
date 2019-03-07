@@ -90,10 +90,25 @@ class TestimonialController extends Controller
      */
     public function show()
     {
+        //return data to home view
         $data = testimonials::all();
         return view('pages.home', compact('data'));
     }
 
+    /**
+     * showAll
+     *
+     * @param  mixed $request
+     *
+     * @return void
+     */
+    public function all(Request $request)
+    {
+        //show all testimonials
+        $testimonials = testimonials::all();
+        return view('auth.all', compact('testimonials'));
+    }
+    
     /**
      * Update the specified resource in storage.
      *

@@ -22,7 +22,13 @@
     .testimonial--list {
         padding: 20px;
         margin: auto;
-        max-width: 450px;        
+        max-width: 450px;
+        &__all {
+            padding: 25px;
+            img {
+                margin-top: -20px;
+            }
+        }    
         .approve {
             color: green;
            

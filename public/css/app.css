@@ -11207,6 +11207,14 @@ footer span:hover i {
   max-width: 450px;
 }
 
+.testimonial--view .testimonial--list__all {
+  padding: 25px;
+}
+
+.testimonial--view .testimonial--list__all img {
+  margin-top: -20px;
+}
+
 .testimonial--view .testimonial--list .approve {
   color: green;
 }
