@@ -1,12 +1,20 @@
 // HEADER
 
 header {
-    margin-top: 25px;
 
+    margin-top: 25px;
+    width: 100%;
+    
     button {
-        margin-top: 10px;
+        margin-top: 5px;
+        width: 125px;
         border: 2px solid purple;
         color: purple;
+        padding: 2px;
+        border-radius: 0;
+        display: block;
+        margin-right: 0%;
+        margin-left: auto;
     }
 
     button:hover {
@@ -14,7 +22,16 @@ header {
         background-color: purple;
     }
     img {
+        margin-top: 5px;
         width: 50px;
         height: auto;
+        display: inline-block;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
     }
 }

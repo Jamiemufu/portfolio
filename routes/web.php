@@ -11,27 +11,28 @@
 |
 */
 
-//home
-//post to formcontroller store method
-Route::post('/', 'ContactController@store');
-//testimonial get requests
+
+//home with testimonial data to view
 Route::get('/', 'TestimonialController@show');
-Route::get('/testimonials/all', 'TestimonialController@all');
-Route::get('/testimonials/approve', 'TestimonialController@index');
+//post Contact form
+Route::post('/', 'ContactController@store');
 Route::get('/testimonials/create', 'TestimonialController@create');
-//testimonial post requests
 Route::post('/testimonials/create', 'TestimonialController@store');
-//testimonial put request
-Route::put('/testimonials/approve{id}', 'TestimonialController@update');
+
+//Admin only routes
+Route::get('/testimonials/all', 'TestimonialController@all')->middleware('auth.basic');
+Route::get('/testimonials/approve', 'TestimonialController@index')->middleware('auth.basic');
+Route::any('/admin', 'AdminController@dashboard')->middleware('auth.basic');
+Route::put('/testimonials/approve{id}', 'TestimonialController@update')->middleware('auth.basic');
+Route::any('/logout', 'AdminController@logout');
+
 //resume
 Route::any('/resume', function () {
     return view('pages.resume');
 });
 
-
 // TODO
-
-// 1) Auth
+// 1) Used the same mail function twice, re-factor to a class
 // 2) Editable and database driven projects
 //    ProjectController -> Create/Edit/Delete model and routes -> Storage - > redo frontend
 // 3) Editable sections

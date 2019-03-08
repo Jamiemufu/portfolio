@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use \App\testimonials;
 
 class TestimonialController extends Controller
@@ -32,7 +33,7 @@ class TestimonialController extends Controller
         }
 
         //return data to view
-        return view('auth.testimonials', compact('testimonials'))->with('message', $message);
+        return view('admin.testimonials', compact('testimonials'))->with('message', $message);
     }
 
     /**
@@ -79,6 +80,16 @@ class TestimonialController extends Controller
         //save to database
         $test->save();
 
+        $mail = $request->all();
+        //send email notifaction of new testimonial
+        Mail::send('emails.testimonialNotification', $mail, function ($message) 
+        {
+            $message->from('jamie@jedesign.xyz', 'Jamie Evans');
+            $message->to('jamie@jedesign.xyz', 'Jamie Evans');
+            $message->subject('New Testimonial Received');
+            $message->priority(3);
+        });
+
         return redirect('/');
     }
 
@@ -106,7 +117,7 @@ class TestimonialController extends Controller
     {
         //show all testimonials
         $testimonials = testimonials::all();
-        return view('auth.all', compact('testimonials'));
+        return view('admin.all', compact('testimonials'));
     }
     
     /**
