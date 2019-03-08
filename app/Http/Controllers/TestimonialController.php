@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
 use \App\testimonials;
 
 class TestimonialController extends Controller
@@ -61,7 +60,7 @@ class TestimonialController extends Controller
             'company' => 'required|string',
             'comment' => 'required|string',
         ]);
-
+        var_dump($request->All());
         //get file and store
         $file = $request->file('picture');
         $path = $file->store('public/uploads');
@@ -79,18 +78,14 @@ class TestimonialController extends Controller
 
         //save to database
         $test->save();
+        
+        //data for mailSend
+        $data = $request->all();
 
-        $mail = $request->all();
         //send email notifaction of new testimonial
-        Mail::send('emails.testimonialNotification', $mail, function ($message) 
-        {
-            $message->from('jamie@jedesign.xyz', 'Jamie Evans');
-            $message->to('jamie@jedesign.xyz', 'Jamie Evans');
-            $message->subject('New Testimonial Received');
-            $message->priority(3);
-        });
+        $this->mailSend('emails.testimonialNotification', $data, 'New Testimonial Received');
 
-        return redirect('/');
+        // return redirect('/');
     }
 
     /**

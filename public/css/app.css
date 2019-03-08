@@ -11354,3 +11354,94 @@ footer span:hover i {
   color: purple;
 }
 
+.project-form .title {
+  padding-bottom: 15px;
+}
+
+.project-form .title h1 {
+  color: black;
+}
+
+.project-form .form-50 label {
+  display: block;
+  margin: 0;
+}
+
+.project-form .form-50 input {
+  display: inline-block;
+  width: 50%;
+}
+
+.project-form .input--label {
+  display: inline-block;
+  width: 48%;
+}
+
+.project-form .input--label label {
+  display: block;
+  width: 100%;
+}
+
+.project-form .input--label input {
+  display: block;
+  width: 100%;
+}
+
+.project-form .form-100 {
+  width: 96%;
+  margin: auto;
+  padding: 0 2px;
+}
+
+.project-form .form-100 input[type="file"] {
+  color: #757575;
+}
+
+.project-form .form-25 {
+  padding-top: 25px;
+}
+
+.project-form .form-25 input {
+  text-align: center;
+  margin: auto;
+}
+
+.project-form .form-25 input[type="checkbox"] {
+  display: block;
+  margin: 15px auto;
+  width: 15px;
+  border: 0;
+  outline: 0;
+}
+
+.project-form .form-25 label:first-child {
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.project-form .form-25 label:not(:first-child) {
+  color: black;
+  width: 100px;
+  margin: auto;
+  text-align: center;
+}
+
+.project-form .form-25 label:not(:first-child) i {
+  font-size: 30px;
+  -webkit-text-decoration: center;
+          text-decoration: center;
+}
+
+@media (max-width: 600px) {
+  .project-form .input--label {
+    display: block;
+    width: 100%;
+  }
+
+  .project-form .form-100 {
+    width: 100%;
+  }
+}
+

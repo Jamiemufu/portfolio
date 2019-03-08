@@ -18,11 +18,6 @@
               Comments : {{ $comments }}
            </td>
        </tr>
-       <tr>
-           <td>
-               
-           </td>
-       </tr>
    </table>
 </body>
 </html>

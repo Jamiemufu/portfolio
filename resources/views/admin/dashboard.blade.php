@@ -27,7 +27,7 @@
                     <button>
                         View Projects
                     </button>
-                    <button>
+                    <button onclick="window.location='{{ url('/project/create') }}'">
                         Edit Projects
                     </button>
                     <button>

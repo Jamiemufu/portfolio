@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
 
 class contactController extends Controller
 {   
@@ -34,18 +33,14 @@ class contactController extends Controller
         $contact->comments=$request->input('comments', false);
         $contact->save();
         
-        $input = $request->all();
 
+        //data for mailSend
+        $data = $request->all();
         //send basic email saying received mail
-        Mail::send('emails.contact', $input, function ($message) {
-            $message->from('jamie@jedesign.xyz', 'Jamie Evans');
-            $message->to('jamie@jedesign.xyz', 'Jamie Evans');
-            $message->subject('Contact from portfolio website');
-            $message->priority(3);
-        });
+        $this->mailSend('emails.contact', $data, 'Notification: New Contact Received');
 
         //return thanks page with name
-        return view('pages.thanks', $input);
+        return view('pages.thanks', $data);
 
     }
 

@@ -3,7 +3,9 @@
     <div class="row">
         <div class="col-6">
             <div>
-                <img src="{{asset('images/icon_purple.png')}}" alt="JE Design">
+                <a href="{{ url('/') }}">
+                    <img src="{{asset('images/icon_purple.png')}}" alt="JE Design">
+                </a>
             </div>
         </div>
         <div class="col-6 text-right">

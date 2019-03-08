@@ -26,15 +26,20 @@ Route::any('/admin', 'AdminController@dashboard')->middleware('auth.basic');
 Route::put('/testimonials/approve{id}', 'TestimonialController@update')->middleware('auth.basic');
 Route::any('/logout', 'AdminController@logout');
 
+//projects
+Route::get('project/create', function() {
+    return view('admin.createProject');
+});
+Route::post('project/create', 'ProjectController@store')->middleware('auth.basic');
+
 //resume
 Route::any('/resume', function () {
     return view('pages.resume');
 });
 
 // TODO
-// 1) Used the same mail function twice, re-factor to a class
-// 2) Editable and database driven projects
-//    ProjectController -> Create/Edit/Delete model and routes -> Storage - > redo frontend
-// 3) Editable sections
-//    SectionControlller -> Create/Edit model and routes -> redo frontend
+//  Editable and database driven projects
+//  ProjectController -> Create/Edit/Delete model and routes -> Storage - > redo frontend
+//  Editable sections
+//  SectionControlller -> Create/Edit model and routes -> redo frontend
 

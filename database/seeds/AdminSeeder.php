@@ -13,10 +13,10 @@ class AdminSeeder extends Seeder
     {
         \App\User::create([
 
-            'name' => 'admin',
-            'email' => 'admin@jedesign.xyz',
+            'name' => env('ADMIN_NAME', ''),
+            'email' => env('ADMIN_EMAIL', ''),
             'email_verified_at' => now(),
-            'password' => bcrypt('fdlves'),
+            'password' => bcrypt(env('ADMIN_PASSWORD', '')),
             'role' => 'admin',
             'created_at' => now(),
 

@@ -15,12 +15,7 @@
               From {{ $company }}. <br/>
               Comment : {{ $comment }}.
            </td>
-       </tr>
-       <tr>
-           <td>
-               
-           </td>
-       </tr>
+       </tr>       
    </table>
 </body>
 </html>
