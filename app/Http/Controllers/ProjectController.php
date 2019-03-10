@@ -19,6 +19,7 @@ class ProjectController extends Controller
     {
         $project = new Projects;
  
+        //TO DO MAKE FUNCTION FOR THIS
         //get file and store
         $file = $request->file('picture');
         $path = $file->store('public/uploads');
@@ -39,8 +40,31 @@ class ProjectController extends Controller
         return redirect('/admin');
     }
 
-    public function show()
+
+    /**
+     * delete project
+     *
+     * @param  mixed $request
+     * @param  mixed $id
+     *
+     * @return void
+     */
+    public function removeProject (Request $request, $id)
     {
+        $projects = \App\projects::find($id);
+        $projects->delete();
         
+        // redirect to get route
+        return redirect('/project/delete');
+
     }
+
+    public function showProjects(Request $request) 
+    {
+        $projects = projects::all();
+        
+        return view('admin.removeProject', compact('projects'));
+    }
+
+
 }

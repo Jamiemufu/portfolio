@@ -60,7 +60,7 @@ class TestimonialController extends Controller
             'company' => 'required|string',
             'comment' => 'required|string',
         ]);
-        var_dump($request->All());
+    
         //get file and store
         $file = $request->file('picture');
         $path = $file->store('public/uploads');
@@ -85,21 +85,9 @@ class TestimonialController extends Controller
         //send email notifaction of new testimonial
         $this->mailSend('emails.testimonialNotification', $data, 'New Testimonial Received');
 
-        // return redirect('/');
+        return redirect('/');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show()
-    {
-        //return data to home view
-        $data = testimonials::all();
-        return view('pages.home', compact('data'));
-    }
 
     /**
      * showAll

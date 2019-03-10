@@ -11445,3 +11445,25 @@ footer span:hover i {
   }
 }
 
+.remove--project .title {
+  text-align: center;
+  padding: 0;
+  padding: 50px;
+}
+
+.remove--project .title h5 {
+  color: black;
+}
+
+.remove--project form {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.remove--project button {
+  background: none;
+  color: purple;
+}
+

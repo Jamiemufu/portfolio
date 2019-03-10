@@ -13,7 +13,7 @@
 
 
 //home with testimonial data to view
-Route::get('/', 'TestimonialController@show');
+Route::get('/', 'Controller@getAll');
 //post Contact form
 Route::post('/', 'ContactController@store');
 Route::get('/testimonials/create', 'TestimonialController@create');
@@ -31,6 +31,8 @@ Route::get('project/create', function() {
     return view('admin.createProject');
 });
 Route::post('project/create', 'ProjectController@store')->middleware('auth.basic');
+Route::get('project/delete', 'ProjectController@showProjects')->middleware('auth.basic');
+Route::post('project/delete/{id}', 'ProjectController@removeProject')->middleware('auth.basic');
 
 //resume
 Route::any('/resume', function () {
@@ -38,8 +40,8 @@ Route::any('/resume', function () {
 });
 
 // TODO
-//  Editable and database driven projects
-//  ProjectController -> Create/Edit/Delete model and routes -> Storage - > redo frontend
+//  
+//  add preview for image updates
 //  Editable sections
 //  SectionControlller -> Create/Edit model and routes -> redo frontend
 

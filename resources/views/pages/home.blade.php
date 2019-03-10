@@ -119,124 +119,32 @@
             </div>
         </div>
     </div>
-    <!-- examples start -->
+    <!-- projects start -->
     <div class="container examples" onclick="">
         <div class="row text-center">
-            <!--Firsr example-->
-            <div class="col-12 col-md-6 col-lg-4 text-center">
-                <div class="ex-con text-center">
-                    <img class="bg" src="images/rank.jpg" alt="rank">
-                    <div class="overlay">
-                        <div class="middle">
-                            <h3>Grovesenor Casinos</h3>
-                            <p>
-                                <i class="fab fa-html5"></i>
-                                <i class="fab fa-css3-alt"></i>
-                                <i class="fas fa-database"></i>
-                                <i class="fab fa-js-square"></i>
-                                <i class="fab fa-php"></i>
-                            </p>
-                            <a href="https://grosvenorcasinoevents.co.uk/" target="_blank"><button>Visit Site</button></a>
+            {{-- loop through projects model and display--}}
+            @foreach ($projects as $project)
+
+                <div class="col-12 col-md-6 col-lg-4 text-center">
+                    <div class="ex-con text-center">
+                        <img class="bg" src="{{ asset( $project->image) }}" alt="">
+                        <div class="overlay">
+                            <div class="middle">
+                                <h3> {{ $project->name }}</h3>
+                                <p>
+                                    {!! $project->html !!}
+                                    {!! $project->css !!}
+                                    {!! $project->js !!}
+                                    {!! $project->php !!}
+                                    {!! $project->dbase !!}
+                                </p>
+                                <a href="{{ $project->link }}" target="_blank"><button>Visit Site</button></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- second example -->
-            <div class="col-12 col-md-6 col-lg-4 text-center">
-                <div class="ex-con">
-                    <img class="bg" src="images/wwprizes.jpg" alt="rank">
-                    <div class="overlay">
-                        <div class="middle">
-                            <h3>WeightWatchers UK</h3>
-                            <p>
-                                <i class="fab fa-html5"></i>
-                                <i class="fab fa-css3-alt"></i>
-                                <i class="fas fa-database"></i>
-                                <i class="fab fa-js-square"></i>
-                                <i class="fab fa-php"></i>
-                            </p>
-                            <a href="https://winwwprizes.co.uk/" target="_blank"><button>Visit Site</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- third example -->
-            <div class="col-12 col-md-6 col-lg-4 text-center">
-                <div class="ex-con">
-                    <img class="bg" src="images/regus.jpg" alt="rank">
-                    <div class="overlay">
-                        <div class="middle">
-                            <h3>Regus UK</h3>
-                            <p>
-                                <i class="fab fa-html5"></i>
-                                <i class="fab fa-css3-alt"></i>
-                                <i class="fas fa-database"></i>
-                                <i class="fab fa-js-square"></i>
-                                <i class="fab fa-php"></i>
-                            </p>
-                            <a href="http://itgproduction.com/clients/regus/landing_pages/regus_eco_landing_page/index.html"
-                                target="_blank"><button>Visit Site</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- fouth example -->
-            <div class="col-12 col-md-6 col-lg-4 text-center hide">
-                <div class="ex-con">
-                    <img class="bg" src="images/namco.jpg" alt="rank">
-                    <div class="overlay">
-                        <div class="middle">
-                            <h3>Namco Funscape!</h3>
-                            <p>
-                                <i class="fab fa-html5"></i>
-                                <i class="fab fa-css3-alt"></i>
-                                <i class="fas fa-database"></i>
-                                <i class="fab fa-js-square"></i>
-                                <i class="fab fa-php"></i>
-                            </p>
-                            <a href="https://namcofunscape.com/" target="_blank"><button>Visit Site</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- fifth example -->
-            <div class="col-12 col-md-6 col-lg-4 text-center hide">
-                <div class="ex-con">
-                    <img class="bg" src="images/mecca.jpg" alt="rank">
-                    <div class="overlay">
-                        <div class="middle">
-                            <h3>Mecca Bingo</h3>
-                            <p>
-                                <i class="fab fa-html5"></i>
-                                <i class="fab fa-css3-alt"></i>
-                                <i class="fas fa-database"></i>
-                                <i class="fab fa-js-square"></i>
-                                <i class="fab fa-php"></i>
-                            </p>
-                            <a href="https://dev.meccabingoevents.co.uk/" target="_blank"><button>Visit Site</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- sixth example -->
-            <div class="col-12 col-md-6 col-lg-4 text-center hide">
-                <div class="ex-con">
-                    <img class="bg" src="images/bunzl.jpg" alt="rank">
-                    <div class="overlay">
-                        <div class="middle">
-                            <h3>Bunzl</h3>
-                            <p>
-                                <i class="fab fa-html5"></i>
-                                <i class="fab fa-css3-alt"></i>
-                                <i class="fas fa-database"></i>
-                                <i class="fab fa-js-square"></i>
-                                <i class="fab fa-php"></i>
-                            </p>
-                            <a href="https://dev.bunzladvantage.com/" target="_blank"><button>Visit Site</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+            @endforeach
 
             <div class="col-12 more">
                 <a href="https://codepen.io/jamiemufu/" target="_blank">
@@ -264,18 +172,19 @@
                     </div>
 
                     <div class="slider">
+                        {{-- Loop through testimonials and only display if they are approved --}}
+                        @foreach ($testimonials as $test)
+                            @if ($test->approved === 'Approved')
 
-                        @foreach ($data as $value)
-                        @if ($value->approved === 'Approved')
-                        <div>
-                            <img class="text-center" src="{{ asset($value->filename) }}" alt="">
-                            <h5 class="quote">{{ $value->comment}}</h5>
-                            <p class="author">{{ $value->author }}</p>
-                            <p class="company">{{ $value->company }}</p>
-                        </div>
-                        @endif
+                            <div>
+                                <img class="text-center" src="{{ asset($test->filename) }}" alt="">
+                                <h5 class="quote">{{ $test->comment}}</h5>
+                                <p class="author">{{ $test->author }}</p>
+                                <p class="company">{{ $test->company }}</p>
+                            </div>
+
+                            @endif
                         @endforeach
-                     
 
                         {{-- end slider --}}
                     </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use \App\testimonials;
+use \App\projects;
 
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -36,6 +37,21 @@ class Controller extends BaseController
             $message->subject($subject);
             $message->priority(3);
         });
+    }
+
+    /**
+     * get all data needed for the home view
+     *
+     * @param  mixed $request
+     *
+     * @return void
+     */
+    public function getAll(Request $request) 
+    {
+        $testimonials = testimonials::all();
+        $projects = projects::all();
+
+        return view('pages.home', compact('testimonials'), compact('projects'));
     }
 
 }
