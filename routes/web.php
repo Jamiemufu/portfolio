@@ -39,9 +39,4 @@ Route::any('/resume', function () {
     return view('pages.resume');
 });
 
-// TODO
-//  
-//  add preview for image updates
-//  Editable sections
-//  SectionControlller -> Create/Edit model and routes -> redo frontend
 
