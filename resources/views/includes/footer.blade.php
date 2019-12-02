@@ -40,8 +40,7 @@
                             <span><i class="fab fa-codepen"></i></span>
                         </a>
                     </li>
-                    <li>
-                        <!--CHANGE ASAP -->
+                    <li>                       
                         <a href="mailto:jamie@jedesign.xyz">
                             <span><i class="fas fa-envelope"></i></span>
                         </a>
