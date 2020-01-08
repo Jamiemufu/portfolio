@@ -22,7 +22,8 @@ class contactController extends Controller
             'email' => 'email|required',
             'budget' => 'nullable',
             'location' => 'required',
-            'comments' => 'nullable'
+            'comments' => 'nullable',
+            'g-recaptcha-response'=>'required'
         ]);
         
         //save to database
@@ -43,7 +44,4 @@ class contactController extends Controller
         return view('pages.thanks', $data);
 
     }
-
-    
-
 }

@@ -213,28 +213,30 @@
                 {{-- first col --}}
                 <div class="col-12 col-md-6 text-left">
                     <label for="name">Name*</label>
-                    <input type="text" name="name" id="" required tabindex="1">
+                    <input type="text" name="name" required tabindex="1">
                     <label for="location">Location*</label>
-                    <input type="text" name="location" id="" required tabindex="3">
+                    <input type="text" name="location" required tabindex="3">
                 </div>
 
                 {{-- second col --}}
                 <div class="col text-left">
                     <label for="email">Email*</label>
-                    <input type="email" name="email" id="" required tabindex="2">
+                    <input type="email" name="email" required tabindex="2">
                     <label for="budget">Project/Budget</label>
-                    <input type="text" name="budget" id="" tabindex="4">
+                    <input type="text" name="budget" tabindex="4">
                 </div>
 
                 {{-- full bottom col --}}
                 <div class="col-12 text-left">
                     <label for="comments">Comments/suggestions</label>
-                    <textarea name="comments" id="" cols="90" rows="10" tabindex="5"></textarea>
+                    <textarea name="comments" cols="90" rows="10" tabindex="5"></textarea>
+                    {{-- recaptcha --}}
+                <div class="g-recaptcha" data-sitekey="{{env('CAPTCHA_SITE_KEY')}}"></div>
                     <div class="text-center">
                         <button type="submit">Submit</button>
                     </div>
                 </div>
-
+                
             </div>
         </form>
     </div>
